@@ -18,11 +18,6 @@ const Hero = forwardRef((props, ref) => {
     controls.start("hidden");
   }
 
-  const history = useHistory();
-
-  const redirect = () => {
-    history.push("/contact");
-  };
 
   return (
     <div ref={ref}>
@@ -52,7 +47,7 @@ const Hero = forwardRef((props, ref) => {
               <br />
               <br />
             </div>
-            <motion.button variants={fadeAnimation} onClick={redirect}>
+            <motion.button variants={fadeAnimation}>
               Contact Me
             </motion.button>
           </motion.div>
@@ -63,3 +58,5 @@ const Hero = forwardRef((props, ref) => {
 });
 
 export default Hero;
+
+// fix line 50 onClick={} ??

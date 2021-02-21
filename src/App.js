@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { HashRouter, NavLink, useLocation } from "react-router-dom";
 import "./styles/app.scss";
 
@@ -21,31 +21,43 @@ function App() {
   const educationRef = useRef(null);
   const contactRef = useRef(null);
 
+  const [showLinks, setShowLinks] = useState(false);
+
   return (
     <div className='App'>
-
       <HashRouter>
         <Nav
-          refs={
-            {heroRef,
+          refs={{
+            heroRef,
             aboutRef,
             skillsRef,
             projectsRef,
             educationRef,
-            contactRef}
-          }
+            contactRef,
+          }}
+          setShowLinks={setShowLinks}
+          showLinks={showLinks}
         />
-        <NavList />
+        <NavList
+          setShowLinks={setShowLinks}
+          showLinks={showLinks}
+          refs={{
+            heroRef,
+            aboutRef,
+            skillsRef,
+            projectsRef,
+            educationRef,
+            contactRef,
+          }}
+        />
 
-          <Hero key='hero' ref={heroRef} />
-          <About key='about' ref={aboutRef} />
-          <Skills key='skills' ref={skillsRef} />
-          <Projects key='projects' ref={projectsRef} />
-          <Education key='education ' ref={educationRef} />
-          <Contact key='contact' ref={contactRef} />
-
+        <Hero key='hero' ref={heroRef} />
+        <About key='about' ref={aboutRef} />
+        <Skills key='skills' ref={skillsRef} />
+        <Projects key='projects' ref={projectsRef} />
+        <Education key='education ' ref={educationRef} />
+        <Contact key='contact' ref={contactRef} />
       </HashRouter>
-
     </div>
   );
 }
