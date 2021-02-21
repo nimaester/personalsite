@@ -1,0 +1,78 @@
+.contact{
+  height: 100vh;
+  padding: 6rem 5rem 6rem 5rem;
+  h2 {
+    font-size: 3.5rem;
+    color: #00adb5;
+    padding-bottom: 6rem;
+  }
+  // padding: 6rem;
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    text-align: center;
+    justify-content: center;
+  }
+  .input-name, .input-email {
+    height: 6vh;
+    background-color: #222831;
+    border: 1px solid rgba(253, 251, 245, 0.3);
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #FDFBF5;
+    outline: none;
+    width: 20rem;
+  }
+
+  .input-message {
+    height: 22vh;
+    width: 20rem;
+    background-color: #222831;
+    border: 1px solid rgba(253, 251, 245, 0.3);
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #FDFBF5;
+    outline: none;
+    padding-top: 5%;
+  }
+
+  .send {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #00adb5;
+    background: transparent;
+    color: white;
+    transition: all 0.5s ease;
+    &:hover{
+      background-color: #00adb5;
+    }
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .contact {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .input-email, .input-message, .input-name {
+      max-width: 20rem;
+      width: 75vw;
+    }
+  }
+  .send {
+    margin: 3rem
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact {
+    height: 110vh;
+  }
+
+}

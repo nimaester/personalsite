@@ -1,0 +1,38 @@
+.faq {
+  color: white;
+  padding: 6rem 5rem;
+  h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    padding-bottom: 5rem;
+  }
+}
+
+.question {
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    padding-bottom: 5rem;
+  }
+  h3 {
+    color: white;
+  }
+  h4 {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #00adb5;
+  }
+  span {
+    font-weight: bold;
+  }
+
+  p {
+    padding: 1rem 0rem;
+    color: #cccccc;
+    padding: 1rem 0rem 2rem 0rem;
+  }
+}

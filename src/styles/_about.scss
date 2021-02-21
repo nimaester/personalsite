@@ -1,0 +1,221 @@
+.hero {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(0, 132, 255, 0.486),
+    #2222229f
+  ),
+    url(../img//wallpaper.jpg) center no-repeat;
+  background-size: cover;
+
+  h2 {
+    font-weight: lighter;
+    font-size: 3rem;
+    margin-right: 15px;
+  }
+  span {
+    font-weight: bold;
+  }
+  .image {
+    flex: 1;
+    img {
+      max-width: 110vh;
+      max-height: 80vh;
+      min-height: 90vh;
+    }
+  }
+  .title {
+    margin-top: -4rem;
+  }
+  button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #00adb5;
+    background: transparent;
+    color: white;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #00adb5;
+    }
+  }
+  .hide {
+    overflow: hidden;
+  }
+}
+
+.about-me {
+  text-align: center;
+  padding: 6rem 5rem 6rem 5rem;
+  background-color: #222831;
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: white;
+    font-weight: lighter;
+  }
+  h2 {
+    font-size: 3.5rem;
+    color: #00adb5;
+    padding-bottom: 6rem;
+  }
+  h3 {
+    font-size: 2rem;
+    color: #00adb5;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.5rem;
+    color: #00adb5;
+    margin-bottom: 1rem;
+  }
+  h5 {
+    font-size: 1.18rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    color: #eeeeee;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem 3rem 0rem;
+    .my-pic {
+      border-radius: 500px;
+      min-width: 250px;
+      max-width: 250px;
+      margin-top: -3rem;
+      margin-left: -1rem;
+      border: 4px solid #00adb5;
+    }
+    .bio {
+      min-width: 250px;
+      max-width: 250px;
+      text-align: left;
+      padding: 0rem 3rem;
+    }
+    .full-bio {
+      min-width: 250px;
+      max-width: 250px;
+      line-height: 1rem;
+      margin-top: -3.7rem;
+      text-align: left;
+      padding-left: 4rem;
+      p {
+        line-height: 0rem;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-icon {
+  margin-right: 2rem;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 865px) {
+  .about {
+    height: 90vh;
+    flex-direction: column;
+    padding: 0rem 2rem 0rem 2rem;
+    button {
+      width: 100%;
+    }
+    .description {
+      margin: auto;
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .about-me {
+    padding: 6rem 2rem 6rem 2rem;
+    h2 {
+      font-size: 2.5rem;
+      padding-bottom: 0rem;
+    }
+    .cards {
+      flex-direction: column-reverse;
+      p {
+        font-size: 1.1rem;
+      }
+      .bio {
+        margin-top: 2rem;
+        min-width: 280px;
+        max-width: 280px;
+        padding: 0rem;
+      }
+      .my-pic {
+        min-width: 230px;
+        max-width: 230px;
+        margin: 2rem 0rem 2rem 0rem;
+      }
+      .full-bio {
+        margin-top: 2rem;
+        line-height: 1rem;
+        text-align: center;
+        padding-left: 0rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about {
+    flex-direction: column;
+    padding: 0rem 2rem 0rem 2rem;
+    button {
+      width: 100%;
+    }
+    .description {
+      margin: auto;
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .about-me {
+    padding: 5rem 2rem 5rem 2rem;
+    h2 {
+      font-size: 2.5rem;
+      padding-bottom: 2rem;
+    }
+    .cards {
+      margin: -4rem 0rem -4rem 0rem;
+      p {
+        font-size: 1rem;
+      }
+      .bio,
+      .my-pic {
+        min-width: 90%;
+        max-width: 90%;
+      }
+    }
+    .foot {
+      text-align: left;
+      padding-left: 1.2rem;
+    }
+  }
+}

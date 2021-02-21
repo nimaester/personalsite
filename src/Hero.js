@@ -1,0 +1,65 @@
+import React, { forwardRef } from "react";
+import { useHistory } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
+import {
+  slideLeftAnimation,
+  fadeAnimation,
+  slideUpAnimation,
+} from "./animations/animation";
+import { useInView } from "react-intersection-observer";
+
+const Hero = forwardRef((props, ref) => {
+  const controls = useAnimation();
+  const [element, view] = useInView();
+
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
+
+  const history = useHistory();
+
+  const redirect = () => {
+    history.push("/contact");
+  };
+
+  return (
+    <div ref={ref}>
+      <motion.section
+        ref={element}
+        className='hero'
+        variants={fadeAnimation}
+        initial='hidden'
+        animate={controls}
+        exit='exit'
+      >
+        <div className='description'>
+          <motion.div className='title' variants={slideLeftAnimation}>
+            <div className='hide'>
+              <h2>
+                I'm{" "}
+                <motion.span
+                  variants={fadeAnimation}
+                  style={{ color: "#00adb5" }}
+                >
+                  Nim,
+                </motion.span>
+              </h2>
+            </div>
+            <div className='hide'>
+              <h2>a software engineer.</h2>
+              <br />
+              <br />
+            </div>
+            <motion.button variants={fadeAnimation} onClick={redirect}>
+              Contact Me
+            </motion.button>
+          </motion.div>
+        </div>
+      </motion.section>
+    </div>
+  );
+});
+
+export default Hero;
