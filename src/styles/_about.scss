@@ -136,7 +136,7 @@
 @media screen and (max-width: 865px) {
   .hero {
     flex-direction: column;
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 2rem;
     button {
       width: 100%;
     }
@@ -184,7 +184,6 @@
 @media screen and (max-width: 370px) {
   .hero {
     flex-direction: column;
-    padding: 0rem 2rem 0rem 2rem;
     button {
       width: 100%;
     }
