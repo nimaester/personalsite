@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
+.root, body html {
   background-color: rgb(221, 221, 221);
   overflow-x: hidden;
+  position: relative;
 }
 
 .quotes {

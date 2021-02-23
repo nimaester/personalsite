@@ -19,6 +19,9 @@ const Hero = forwardRef((props, ref) => {
     controls.start("hidden");
   }
 
+  const scrollSmoothHandler = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth"});
+  };
 
   return (
     <div ref={ref}>
@@ -52,8 +55,8 @@ const Hero = forwardRef((props, ref) => {
               Contact Me
             </motion.button>
           </motion.div>
-          <p className='quotes'>“We shape our buildings; thereafter, our buildings shape us.”</p>
-        <p className='quotee'>-- Winston Churchill</p>
+          <p className='quotes'>“Whatever good things we build end up building us.”</p>
+        <p className='quotee'>-- Jim Rohn</p>
         </div>
       </motion.section>
     </div>

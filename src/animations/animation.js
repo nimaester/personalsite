@@ -22,7 +22,7 @@ export const primaryFadeAnimation = {
 
 export const slideLeftAnimation = {
   hidden: {
-    x: -200,
+    x: -50,
     opacity: 0,
   },
   show: {
@@ -58,7 +58,7 @@ export const slideUpAnimation = {
 
 export const slideRightAnimation = {
   hidden: {
-    x: 50,
+    x: 15,
     opacity: 0,
   },
   show: {
