@@ -24,6 +24,7 @@ function App() {
   const contactRef = useRef(null);
 
   const [showLinks, setShowLinks] = useState(false);
+  const [back1, setback1] = useState(null)
 
   return (
     <div className='App'>
@@ -56,7 +57,7 @@ function App() {
         <Hero key='hero' ref={heroRef}/>
         <About key='about' ref={aboutRef} />
         <Skills key='skills' ref={skillsRef} />
-
+        <Projects key='projects' ref={projectsRef} />
         <Education key='education ' ref={educationRef} />
         <Contact key='contact' ref={contactRef} />
         </AnimatePresence>
@@ -68,4 +69,3 @@ function App() {
 export default App;
 
 
-// <Projects key='projects' ref={projectsRef} /> 57

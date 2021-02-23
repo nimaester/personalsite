@@ -15,7 +15,7 @@ body {
   font-style: italic;
   color: gray !important;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 5rem;
   margin-bottom: 2rem !important;
   font-size: 1rem !important;
 }
@@ -34,7 +34,9 @@ hr {
   text-align:center;
 }
 
-
+.active {
+  background-color: red;
+}
 
 @media screen and (max-width: 865px) {
   .quotes {
@@ -49,3 +51,4 @@ hr {
 @import "./contact";
 @import "./footer";
 @import "./navlist";
+@import "./projects";

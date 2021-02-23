@@ -48,7 +48,7 @@
 
 .about-me {
   text-align: center;
-  padding: 4rem;
+  padding: 4rem 4rem 0rem 4rem;
   // background-color: #222831;
   h2,
   h3,
@@ -84,6 +84,7 @@
       border-radius: 500px;
       min-width: 280px;
       max-width: 280px;
+      border: solid 2px blue;
     }
     .bio {
       min-width: 330px;
@@ -95,8 +96,17 @@
       min-width: 330px;
       max-width: 330px;
       text-align: left;
-      padding-left: 2rem;
+      align-items: center;
+      padding-left: 3rem;
     }
+  }
+  .entry-type {
+    font-size: 1.6rem;
+    color: blue;
+  }
+  .entry {
+    line-height: 2.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -128,7 +138,8 @@
   }
 
   .about-me {
-    padding: 6rem 2rem 6rem 2rem;
+    overflow-x: hidden;
+    padding: 3rem 2rem 0rem 2rem;
     h2 {
       font-size: 2.5rem;
       padding-bottom: 0rem;
@@ -174,25 +185,21 @@
   }
 
   .about-me {
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 2rem;
     h2 {
       font-size: 2.5rem;
       padding-bottom: 2rem;
     }
     .cards {
-      margin: -4rem 0rem -4rem 0rem;
       p {
         font-size: 1rem;
       }
       .bio,
       .my-pic {
-        min-width: 90%;
-        max-width: 90%;
+        min-width: 95%;
+        max-width: 95%;
       }
     }
-    .foot {
-      text-align: left;
-      padding-left: 1.2rem;
-    }
+
   }
 }

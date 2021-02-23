@@ -69,65 +69,41 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
     <nav className={scroll ? "sticky" : "normal"}>
       <h3>Welcom3</h3>
       <ul className='nav-bar'>
-      <li className='primary nav-link active'>
+      <li className='primary nav-link'>
           <NavLink onClick={()=>{scrollSmoothHandler(refs.heroRef)}} to='/' activeClassName='selected' replace>
             Home
           </NavLink>
-        <motion.div
-          transition={{ duration: 0.75 }}
-          animate={{ width: animates('/') }}
-          className='current-tab'
-        />
+
         </li>
         <li className='nav-link'>
           <NavLink onClick={()=>{scrollSmoothHandler(refs.aboutRef)}} to='/about' activeClassName='selected' replace>
             About
           </NavLink>
-        <motion.div
-          transition={{ duration: 0.75 }}
-          animate={{ width: animates('/about') }}
-          className='current-tab'
-        />
+
         </li>
         <li className='nav-link'>
         <NavLink onClick={()=>{scrollSmoothHandler(refs.skillsRef)}} to='/skills' activeClassName='selected' replace>
           Skills
         </NavLink>
-        <motion.div
-          transition={{ duration: 0.75 }}
-          animate={{ width: location.pathname === "/skills" ? "100%" : 0 }}
-          className='current-tab'
-        />
+
         </li>
         <li className='nav-link'>
         <NavLink onClick={()=>{scrollSmoothHandler(refs.projectsRef)}} to='/projects' activeClassName='selected' replace>
           Projects
         </NavLink>
-        <motion.div
-          transition={{ duration: 0.75 }}
-          animate={{ width: location.pathname === "/projects" ? "100%" : 0 }}
-          className='current-tab'
-        />
+
         </li>
         <li className='nav-link'>
         <NavLink onClick={()=>{scrollSmoothHandler(refs.educationRef)}} to='/education' activeClassName='selected' replace>
           Education
         </NavLink>
-        <motion.div
-          transition={{ duration: 0.75 }}
-          animate={{ width: location.pathname === "/education" ? "100%" : 0 }}
-          className='current-tab'
-        />
+
         </li>
         <li className='nav-link'>
         <NavLink onClick={()=>{scrollSmoothHandler(refs.contactRef)}} to='/contact' activeClassName='selected' replace>
           Contact
         </NavLink>
-        <motion.div
-          transition={{ duration: 0.75 }}
-          animate={{ width: location.pathname === "/contact" ? "100%" : 0 }}
-          className='current-tab'
-        />
+
         </li>
           <i
             className={`${
@@ -141,3 +117,10 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
 };
 
 export default Nav;
+
+
+// <motion.div
+//           transition={{ duration: 0.75 }}
+//           animate={{ width: location.pathname === "/skills" ? "100%" : 0 }}
+//           className='current-tab'
+//         />

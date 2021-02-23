@@ -5,16 +5,16 @@ export const primaryFadeAnimation = {
   show: {
     opacity:1,
     transition: {
-      duration: 0.8,
+      duration: 0.5,
       when: "beforeChildren",
-      staggerChildren: 0.5
+      staggerChildren: 0.1
     }
   },
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.6,
-      staggerChildren: 0.5
+      duration: 0.5,
+      staggerChildren: 0.1
     }
   }
 }
@@ -22,7 +22,7 @@ export const primaryFadeAnimation = {
 
 export const slideLeftAnimation = {
   hidden: {
-    x: -2000,
+    x: -200,
     opacity: 0,
   },
   show: {
@@ -33,7 +33,24 @@ export const slideLeftAnimation = {
       ease: "easeOut",
       staggerChildren: 0.2,
       when: "beforeChildren"
+    }
+  }
+}
 
+export const slideUpAnimation = {
+
+  hidden: {
+    y: -200,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+      staggerChildren: 0.2,
+      when: "beforeChildren"
     }
   }
 }
@@ -51,7 +68,6 @@ export const slideRightAnimation = {
       duration: 0.5,
       ease: "easeOut",
       staggerChildren: 0.2,
-      when: "beforeChildren"
     }
   }
 }

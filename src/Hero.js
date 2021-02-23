@@ -23,6 +23,7 @@ const Hero = forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <motion.section
+      id="hero"
         ref={element}
         className='hero'
         variants={primaryFadeAnimation}

@@ -1,18 +1,18 @@
 .skills {
-  padding: 6rem 5rem 0rem 5rem;
+  padding: 4rem 4rem 0rem 4rem;
   text-align: center;
-  color: white;
-  height: 100vh;
+  // color: white;
+  background-color: rgb(134, 134, 56);
   h2 {
     font-weight: lighter;
     font-size: 3.5rem;
-    color:  #00adb5;
-    padding-bottom: 6rem;
+    // color:  #00adb5;
+    margin-top: 2rem;
   }
   .section {
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding: 3rem 0rem 0rem 0rem;
   }
 
   .tech-skills {
@@ -34,7 +34,7 @@
       flex-direction: column;
       align-items: center;
     }
-    padding: 6rem 2rem 0rem 2rem;
+    padding: 3rem 2rem 0rem 2rem;
     h2 {
       font-size: 3rem;
     }
