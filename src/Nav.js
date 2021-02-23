@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -13,34 +13,20 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
     setShowLinks(!showLinks);
   };
 
-  // useEffect(() => {
-  //   console.log(location.pathname);
-  //   switch (location.pathname) {
-  //     case "/":
-  //       scrollSmoothHandler(refs.heroRef);
-  //       break;
-  //     case "/about":
-  //       scrollSmoothHandler(refs.aboutRef);
-  //       break;
-  //     case "/skills":
-  //       scrollSmoothHandler(refs.skillsRef);
-  //       break;
-  //     case "/projects":
-  //       scrollSmoothHandler(refs.projectsRef);
-  //       break;
-  //     case "/education":
-  //       scrollSmoothHandler(refs.educationRef);
-  //       break;
-  //     case "/contact":
-  //       scrollSmoothHandler(refs.contactRef);
-  //       break;
-  //     default:
-  //     // ignore
-  //   }
-  // }, [location, refs]);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const scrollCheck = window.scrollY > 0
+      if (scrollCheck !== scroll) {
+        setScroll(scrollCheck)
+      }
+    })
+  })
+
 
   return (
-    <nav>
+    <nav className={scroll ? "sticky" : ""}>
       <NavLink to='/' activeClassName='selected' replace>
         <i onClick={()=>{scrollSmoothHandler(refs.heroRef)}} className='fas fa-home fa-2x'></i>
       </NavLink>

@@ -36,7 +36,7 @@ const Hero = forwardRef((props, ref) => {
                 I'm{" "}
                 <motion.span
                   variants={fadeAnimation}
-                  style={{ color: "#00adb5" }}
+
                 >
                   Nim,
                 </motion.span>
@@ -60,3 +60,4 @@ const Hero = forwardRef((props, ref) => {
 export default Hero;
 
 // fix line 50 onClick={} ??
+// style={{ color: "#00adb5" }} line 39

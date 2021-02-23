@@ -1,12 +1,14 @@
 nav {
   display: flex;
-  padding: 1rem 6rem 1rem 6rem;
-  background-color: black;
+  padding: 1rem 4rem;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 10;
   transition: ease 0.5s;
+  align-items: center;
+  width: 100%;
 
   ul {
     list-style: none;
@@ -15,13 +17,14 @@ nav {
     justify-content: center;
   }
   .nav-link{
-    padding-left: 3rem;
+    padding-left: 2rem;
     position: relative;
   }
   a {
     text-decoration: none !important;
     color: white;
     font-size: 1.2rem;
+    letter-spacing: 2px;
   }
 
   li:hover, .fas:hover {
@@ -50,11 +53,23 @@ nav {
     image-resolution: 300dpi;
     width: 50%;
   }
+  .sticky {
+    padding: 5px 100px;
+    color: black;
+    background-color: black;
+  }
 }
+
+.sticky {
+    color: black;
+    background-color: black;
+}
+
 
 
 @media screen and (max-width: 865px) {
   nav {
+    background-color: black;
     justify-content: space-between;
     padding: 1rem 2rem 1rem 2rem;
     .nav-link {

@@ -3,13 +3,13 @@
   padding: 0;
   font-family: 'Lato', sans-serif;
   // -webkit-font-smoothing: antialiased;
-  font-weight: 200;
+  box-sizing: border-box;
 }
 
-// body {
-//   background-color: #212121;
-//   // overflow-x: hidden;
-// }
+body {
+  background-color: rgb(221, 221, 221);
+  // overflow-x: hidden;
+}
 
 .quotes {
   font-style: italic;
