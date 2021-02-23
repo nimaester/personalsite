@@ -52,6 +52,8 @@ const Hero = forwardRef((props, ref) => {
               Contact Me
             </motion.button>
           </motion.div>
+          <p className='quotes'>“We shape our buildings; thereafter, our buildings shape us.”</p>
+        <p className='quotee'>-- Winston Churchill</p>
         </div>
       </motion.section>
     </div>

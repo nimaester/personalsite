@@ -29,9 +29,9 @@ const Skills = forwardRef((props, ref) => {
       animate={controls}
       exit='exit'
     >
-      <motion.h2 variants={slideUpAnimation}>Technical Skills</motion.h2>
+      <motion.h2 variants={slideRightAnimation}>Technical Skills</motion.h2>
       <div className='section'>
-        <motion.div variants={slideLeftAnimation} className='section-1'>
+        <div className='section-1'>
           <ul>
             <li className='tech-skills'>
               <span className='skills-type'>Javascript</span>
@@ -145,9 +145,9 @@ const Skills = forwardRef((props, ref) => {
               </span>
             </li>
           </ul>
-        </motion.div>
+        </div>
 
-        <motion.div variants={slideRightAnimation} className='section-2'>
+        <div className='section-2'>
           <ul>
             <li className='tech-skills'>
               <span className='skills-type2'>AWS</span>
@@ -261,7 +261,7 @@ const Skills = forwardRef((props, ref) => {
               </span>
             </li>
           </ul>
-        </motion.div>
+        </div>
       </div>
       <p className='quotes'>
         "Everybody should learn to program a computer, because it teaches you

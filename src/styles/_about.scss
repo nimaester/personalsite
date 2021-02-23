@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 2rem;
+  padding-top: 18rem;
   display: flex;
   height: 105vh;
   align-items: center;
@@ -20,14 +20,7 @@
   span {
     font-weight: bold;
   }
-  .image {
-    flex: 1;
-    img {
-      max-width: 110vh;
-      max-height: 80vh;
-      min-height: 90vh;
-    }
-  }
+
   button {
     font-weight: bold;
     font-size: 1.1rem;
@@ -40,9 +33,6 @@
     &:hover {
       background-color: #00adb5;
     }
-  }
-  .hide {
-    overflow: hidden;
   }
 }
 
@@ -125,7 +115,7 @@
 @media screen and (max-width: 865px) {
   .hero {
     flex-direction: column;
-    padding: 2rem;
+    padding: 18rem 2rem 0rem 2rem;
     button {
       width: 100%;
     }
@@ -139,7 +129,6 @@
   }
 
   .about-me {
-    overflow-x: hidden;
     padding: 3rem 2rem 0rem 2rem;
     h2 {
       font-size: 2.5rem;

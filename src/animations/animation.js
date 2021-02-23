@@ -5,7 +5,7 @@ export const primaryFadeAnimation = {
   show: {
     opacity:1,
     transition: {
-      duration: 0.8,
+      duration: 0.5,
       when: "beforeChildren",
       staggerChildren: 0.1
     }
@@ -13,7 +13,7 @@ export const primaryFadeAnimation = {
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.8,
+      duration: 0.5,
       // staggerChildren: 0.1
     }
   }
@@ -58,7 +58,7 @@ export const slideUpAnimation = {
 
 export const slideRightAnimation = {
   hidden: {
-    x: 200,
+    x: 50,
     opacity: 0,
   },
   show: {
