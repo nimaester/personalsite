@@ -1,7 +1,7 @@
 import React, { Fragment, forwardRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { slideUpAnimation, fadeAnimation } from "./animations/animation";
+import { slideUpAnimation, fadeAnimation, primaryFadeAnimation, slideRightAnimation } from "./animations/animation";
 import fbLogo from "./img/fb.png";
 import linkLogo from "./img/linkin.png";
 import face from "./img/face.png";
@@ -17,16 +17,16 @@ const AboutMe = forwardRef((props, ref) => {
   }
 
   return (
-    <div ref={ref}>
+    <section ref={ref}>
       <motion.div
         ref={element}
-        variants={fadeAnimation}
+        className='about-me'
+        variants={slideRightAnimation}
         initial='hidden'
         animate={controls}
-        className='about-me'
         exit='exit'
       >
-        <motion.h2 variants={fadeAnimation}>About Me</motion.h2>
+        <motion.h2>About Me</motion.h2>
         <div className='cards'>
           <div className='bio'>
             <p>
@@ -65,7 +65,7 @@ const AboutMe = forwardRef((props, ref) => {
         <p className='quotee'>-- Oscar Wilde</p>
         <hr className='ab' />
       </motion.div>
-    </div>
+    </section>
   );
 });
 

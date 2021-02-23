@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { HashRouter, NavLink, useLocation } from "react-router-dom";
 import "./styles/app.scss";
+import { useInView } from "react-intersection-observer";
+
 
 import Nav from "./Nav";
 import NavList from "./NavList";
@@ -50,16 +52,20 @@ function App() {
             contactRef,
           }}
         />
-
-        <Hero key='hero' ref={heroRef} />
+        <AnimatePresence>
+        <Hero key='hero' ref={heroRef}/>
         <About key='about' ref={aboutRef} />
         <Skills key='skills' ref={skillsRef} />
-        <Projects key='projects' ref={projectsRef} />
+
         <Education key='education ' ref={educationRef} />
         <Contact key='contact' ref={contactRef} />
+        </AnimatePresence>
       </HashRouter>
     </div>
   );
 }
 
 export default App;
+
+
+// <Projects key='projects' ref={projectsRef} /> 57

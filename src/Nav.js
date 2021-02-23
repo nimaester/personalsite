@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { lineAnimation } from "./animations/animation"
 
 const Nav = ({ refs, showLinks, setShowLinks }) => {
   const location = useLocation();
@@ -24,20 +26,66 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
     })
   })
 
+  const animates = (loc) => {
+    if (loc === location.pathname) {
+      return "100%"
+    } else {
+      return ""
+    }
+  }
+  // useEffect(() => {
+  //   document.addEventListener("scroll", () => {
+
+  //   })
+  // })
+
+  // useEffect(() => {
+  //   console.log(location.pathname);
+  //   switch (location.pathname) {
+  //     case "/":
+  //       scrollSmoothHandler(refs.heroRef);
+  //       break;
+  //     case "/about":
+  //       scrollSmoothHandler(refs.aboutRef);
+  //       break;
+  //     case "/skills":
+  //       scrollSmoothHandler(refs.skillsRef);
+  //       break;
+  //     case "/projects":
+  //       scrollSmoothHandler(refs.projectsRef);
+  //       break;
+  //     case "/education":
+  //       scrollSmoothHandler(refs.educationRef);
+  //       break;
+  //     case "/contact":
+  //       scrollSmoothHandler(refs.contactRef);
+  //       break;
+  //     default:
+  //     // ignore
+  //   }
+  // }, [location, refs]);
 
   return (
-    <nav className={scroll ? "sticky" : ""}>
-      <NavLink to='/' activeClassName='selected' replace>
-        <i onClick={()=>{scrollSmoothHandler(refs.heroRef)}} className='fas fa-home fa-2x'></i>
-      </NavLink>
+    <nav className={scroll ? "sticky" : "normal"}>
+      <h3>Welcom3</h3>
       <ul className='nav-bar'>
-        <li className='primary nav-link'>
+      <li className='primary nav-link active'>
+          <NavLink onClick={()=>{scrollSmoothHandler(refs.heroRef)}} to='/' activeClassName='selected' replace>
+            Home
+          </NavLink>
+        <motion.div
+          transition={{ duration: 0.75 }}
+          animate={{ width: animates('/') }}
+          className='current-tab'
+        />
+        </li>
+        <li className='nav-link'>
           <NavLink onClick={()=>{scrollSmoothHandler(refs.aboutRef)}} to='/about' activeClassName='selected' replace>
             About
           </NavLink>
         <motion.div
           transition={{ duration: 0.75 }}
-          animate={{ width: location.pathname === "/about" ? "100%" : 0 }}
+          animate={{ width: animates('/about') }}
           className='current-tab'
         />
         </li>
@@ -81,14 +129,12 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
           className='current-tab'
         />
         </li>
-        <div className='burger-icon'>
           <i
             className={`${
               showLinks ? "fas fa-times fa-2x" : "fas fa-bars fa-2x"
             }`}
             onClick={closeNavLinks}
           ></i>
-        </div>
       </ul>
     </nav>
   );

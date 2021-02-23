@@ -8,7 +8,7 @@
 
 body {
   background-color: rgb(221, 221, 221);
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .quotes {
@@ -44,8 +44,8 @@ hr {
 
 @import "./about";
 @import "./nav";
-// @import "./education";
-// @import "./skills";
-// @import "./contact";
-// @import "./footer";
+@import "./education";
+@import "./skills";
+@import "./contact";
+@import "./footer";
 @import "./navlist";

@@ -4,7 +4,8 @@ import { motion, useAnimation } from "framer-motion";
 import {
   slideLeftAnimation,
   fadeAnimation,
-  slideUpAnimation,
+  primaryFadeAnimation,
+  thirdFadeAnimation
 } from "./animations/animation";
 import { useInView } from "react-intersection-observer";
 
@@ -24,10 +25,9 @@ const Hero = forwardRef((props, ref) => {
       <motion.section
         ref={element}
         className='hero'
-        variants={fadeAnimation}
+        variants={primaryFadeAnimation}
         initial='hidden'
         animate={controls}
-        exit='exit'
       >
         <div className='description'>
           <motion.div className='title' variants={slideLeftAnimation}>
@@ -36,7 +36,7 @@ const Hero = forwardRef((props, ref) => {
                 I'm{" "}
                 <motion.span
                   variants={fadeAnimation}
-
+                  style={{ color: "#00adb5" }}
                 >
                   Nim,
                 </motion.span>
