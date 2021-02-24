@@ -78,6 +78,7 @@
     margin: 10px;
     h3 {
       padding-top: 1rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -90,9 +91,21 @@
     h2 {
       font-size: 2rem;
     }
+    .tech-skill {
+      padding: 1px;
+      h3 {
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+      }
+    }
     .skills-container {
-      padding: 4rem 1rem 0rem 1rem;
+      padding: 4rem 0rem 0rem 0rem;
       grid-template-columns: repeat(2, 1fr)
+    }
+    .skill-desc {
+      padding: 10px;
+      line-height: 1.3;
+      font-size: 0.6rem;
     }
   }
 }

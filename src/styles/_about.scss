@@ -86,7 +86,7 @@
       border: solid 10px #3f72af;
     }
     .bio {
-      min-width: 95%;
+      min-width: 330px;
       max-width: 330px;
       text-align: left;
       padding: 0rem 3rem;
@@ -120,6 +120,10 @@
 
 .primary-icon {
   margin-right: 2rem;
+}
+
+.invite {
+  text-align: center;
 }
 
 @media screen and (max-width: 865px) {
@@ -174,6 +178,11 @@
       }
     }
   }
+  .invite {
+    text-align: left;
+    padding-left: 3rem;
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -193,6 +202,9 @@
 
   .about-me {
     padding: 1rem;
+    p {
+      font-size: 1rem !important;
+    }
     h2 {
       font-size: 2rem;
       padding-bottom: 0rem;
@@ -226,7 +238,7 @@
     }
     .invite {
       margin: 1rem;
-      font-size: 1.1rem;
+      padding-left: 0;
     }
   }
 }

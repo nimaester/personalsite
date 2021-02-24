@@ -2,7 +2,8 @@
   padding: 4rem 4rem 0rem 4rem;
   background-color: #dbe2ef;
   height: 100vh;
-  h2, h3{
+  h2,
+  h3 {
     font-weight: lighter;
     text-align: center;
   }
@@ -15,12 +16,36 @@
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 500;
+    margin: 4rem 0rem 2rem 0rem;
+  }
+
+  .exp-type {
+    text-align: left;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 3fr;
+  }
+
+  .title {
+    grid-column: 1/2;
+    min-width: 330px;
+    max-width: 330px;
+  }
+
+  .description {
+    grid-column: 3/4;
+    min-width: 330px;
+    max-width: 330px;
+  }
+
+  .grid-container {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 865px) {
   .experience {
@@ -33,5 +58,4 @@
 }
 
 @media screen and (max-width: 420px) {
-
 }

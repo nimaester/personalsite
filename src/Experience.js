@@ -28,13 +28,18 @@ const Experience = forwardRef((props, ref) => {
         exit='exit'
       >
         <motion.h2 variants={slideLeftAnimation}>Experience</motion.h2>
+        <h3 className="exp-type">Education</h3>
         <div className='grid-container'>
           <div className='grid'>
-            <h3 className='title'>Hack Reactor</h3>
+
+            <h4 className='title'>Hack Reactor</h4>
+            <h4 className='title'>2020-2020</h4>
             <p className='description'>
             Hack Reactor is an immersive coding school providing software engineering education, career placement services, and a lifelong network of professional peers.
             </p>
           </div>
+
+
         </div>
       </motion.section>
     </div>
