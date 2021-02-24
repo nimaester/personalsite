@@ -1,7 +1,8 @@
 .hero {
-  padding-top: 18rem;
+  padding-top: 15rem;
   display: flex;
   height: 105vh;
+  width: 100%;
   align-items: center;
   color: white;
   justify-content: center;
@@ -30,7 +31,7 @@
     background: transparent;
     color: white;
     transition: all 0.5s ease;
-    margin-bottom: 10rem;
+
     &:hover {
       background-color: #00adb5;
     }
@@ -97,8 +98,8 @@
     color: blue;
   }
   .entry {
-    line-height: 2.5rem;
-    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -116,13 +117,12 @@
 @media screen and (max-width: 865px) {
   .hero {
     flex-direction: column;
-    padding: 18rem 2rem 0rem 2rem;
+    margin-top: 2rem;
+    padding: 12rem 2rem 0rem 2rem;
     button {
       width: 100%;
-      margin-bottom: 7rem;
     }
     .description {
-      margin: auto;
       h2 {
         font-size: 3rem;
         text-align: center;
@@ -164,34 +164,43 @@
 
 @media screen and (max-width: 370px) {
   .hero {
+    margin-top: 2rem;
     flex-direction: column;
     button {
       width: 100%;
-      margin-bottom: 1rem;
     }
     .description {
-      margin: auto;
+
       h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
   }
 
   .about-me {
-    padding: 2rem;
     h2 {
-      font-size: 2.5rem;
-      padding-bottom: 2rem;
+      font-size: 2rem;
+      padding-bottom: 0rem;
     }
     .cards {
-      p {
-        font-size: 1rem;
+      padding: 1rem;
+      .bio {
+        margin-top: 1rem;
+        max-width: 99%;
+        padding: 0rem;
       }
-      .bio,
       .my-pic {
-        min-width: 95%;
-        max-width: 95%;
+        min-width: 200px;
+        max-width: 200px;
+        margin: 1rem;
       }
+      .full-bio {
+        margin-top: 2rem;
+        line-height: 1rem;
+        text-align: center;
+        padding-left: 0rem;
+      }
+
     }
 
   }

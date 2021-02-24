@@ -6,10 +6,9 @@
   box-sizing: border-box;
 }
 
-.root, body html {
-  background-color: rgb(221, 221, 221);
+body {
+
   overflow-x: hidden;
-  position: relative;
 }
 
 .quotes {
@@ -18,7 +17,6 @@
   text-align: center;
   padding-top: 5rem;
   margin-bottom: 2rem !important;
-  font-size: 1rem !important;
 }
 
 .quotee {
@@ -35,19 +33,15 @@ hr {
   text-align:center;
 }
 
-.active {
-  background-color: red;
-}
-
 @media screen and (max-width: 865px) {
-  .quotes {
-    padding-top: 3rem;
+  .quotes, .quotee {
+    margin-top: 1rem;
   }
 }
 
 @import "./about";
 @import "./nav";
-@import "./education";
+@import "./experience";
 @import "./skills";
 @import "./contact";
 @import "./footer";

@@ -50,7 +50,7 @@
     // color: white;
     transition: all 0.5s ease;
     &:hover{
-      // background-color: #00adb5;
+      background-color: #00adb5;
     }
   }
 }
@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 420px) {
   .contact {
-    height: 110vh;
+    height: 100vh;
   }
 
 }

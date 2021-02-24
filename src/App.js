@@ -10,7 +10,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import Education from "./Education";
+import Experience from "./Experience";
 import Contact from "./Contact";
 
 import { AnimatePresence } from "framer-motion";
@@ -58,7 +58,7 @@ function App() {
         <About key='about' ref={aboutRef} />
         <Skills key='skills' ref={skillsRef} />
         <Projects key='projects' ref={projectsRef} />
-        <Education key='education ' ref={educationRef} />
+        <Experience key='education ' ref={educationRef} />
         <Contact key='contact' ref={contactRef} />
         </AnimatePresence>
       </HashRouter>

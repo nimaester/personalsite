@@ -33,11 +33,6 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
       return ""
     }
   }
-  // useEffect(() => {
-  //   document.addEventListener("scroll", () => {
-
-  //   })
-  // })
 
   // useEffect(() => {
   //   console.log(location.pathname);

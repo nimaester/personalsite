@@ -1,11 +1,11 @@
 import React, { forwardRef } from 'react';
 
-const Education = forwardRef((props, ref) => {
+const Experience = forwardRef((props, ref) => {
   return (
     <section className="education"ref={ref}>
-      Education
+      Experience
     </section>
   );
 });
 
-export default Education;
+export default Experience;
