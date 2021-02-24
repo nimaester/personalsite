@@ -90,7 +90,7 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
         </li>
         <li className='nav-link'>
         <NavLink onClick={()=>{scrollSmoothHandler(refs.educationRef)}} to='/education' activeClassName='selected' replace>
-          Education
+          Experience
         </NavLink>
 
         </li>

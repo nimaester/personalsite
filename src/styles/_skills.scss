@@ -1,5 +1,5 @@
 .skills {
-  padding: 4rem 4rem 0rem 4rem;
+  padding: 2rem 4rem 0rem 4rem;
   text-align: center;
   // color: white;
   // background-color: rgb(206, 206, 206);
@@ -7,25 +7,85 @@
   h2 {
     font-weight: lighter;
     font-size: 3.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   .skills-container {
     padding: 3rem 0rem 3rem 0rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 13rem);
+    justify-content: center;
   }
 }
 
 .tech-skill {
-  background-color: rgb(136, 136, 136);
+  background-color: rgb(240, 239, 239);
   padding: 1rem;
   margin: 1rem;
   border-radius: 20px;
+  &:hover {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .skill-desc {
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 20px;
+  }
+}
+
+.tech-skill:hover .skill-desc {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (max-width: 865px) {
+  .skills {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .skills-container {
+      padding: 4rem 4rem 0rem 4rem;
+      grid-template-columns: repeat(3, 10rem)
+    }
+    .skill-desc {
+      line-height: 1.4;
+      font-size: 0.7rem;
+    }
+  }
+
+  .tech-skill {
+    padding: 10px;
+    margin: 10px;
+  }
 
 }
 
 @media screen and (max-width: 420px) {
+  .skills {
+    padding: 2rem 1rem 0rem 1rem;
+    margin-top: 2rem;
+    h2 {
+      font-size: 2rem;
+    }
+    .skills-container {
+      padding: 4rem 1rem 0rem 1rem;
+      grid-template-columns: repeat(2, 1fr)
+    }
+  }
 }
