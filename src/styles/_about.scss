@@ -137,31 +137,28 @@
       padding-bottom: 0rem;
     }
     .cards {
+      padding-top: 1rem;
       flex-direction: column-reverse;
       p {
         font-size: 1.1rem;
       }
       .bio {
         margin-top: 2rem;
-        min-width: 280px;
-        max-width: 280px;
+        width: 95%;
         padding: 0rem;
       }
       .my-pic {
-        min-width: 230px;
-        max-width: 230px;
+        width: 95%;
         margin: 2rem 0rem 2rem 0rem;
       }
       .full-bio {
+        width: 95%;
         margin-top: 2rem;
         line-height: 1rem;
         text-align: center;
         padding-left: 0rem;
       }
     }
-  }
-  .foot {
-    font-size: 1.1rem;
   }
 }
 
