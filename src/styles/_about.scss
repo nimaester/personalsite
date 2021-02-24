@@ -46,7 +46,7 @@
 }
 
 .about-me {
-  text-align: center;
+
   padding: 4rem 4rem 0rem 4rem;
   background-color: #f9f7f7;
   h2,
@@ -60,6 +60,7 @@
     font-size: 3.5rem;
     color: #3f72af;
     margin-top: 2rem;
+    text-align: center;
   }
 
   h4 {
@@ -85,7 +86,7 @@
       border: solid 10px #3f72af;
     }
     .bio {
-      min-width: 330px;
+      min-width: 95%;
       max-width: 330px;
       text-align: left;
       padding: 0rem 3rem;
@@ -144,7 +145,7 @@
       padding-bottom: 0rem;
     }
     .cards {
-      padding-top: 1rem;
+      padding-top: 0rem;
       flex-direction: column-reverse;
       p {
         font-size: 1.1rem;
@@ -153,9 +154,6 @@
         margin-top: 2rem;
         width: 95%;
         padding: 0rem;
-        p {
-          text-align: center;
-        }
       }
       .my-pic {
         width: 95%;
@@ -194,16 +192,18 @@
   }
 
   .about-me {
+    padding: 1rem;
     h2 {
       font-size: 2rem;
       padding-bottom: 0rem;
     }
     .cards {
-      padding: 1rem;
+      padding: 0rem;
       .bio {
         margin-top: 1rem;
-        max-width: 99%;
-        padding: 0rem;
+        min-width: 90%;
+        max-width: 90%;
+        margin-bottom: 1rem;
       }
       .my-pic {
         min-width: 200px;
@@ -215,9 +215,18 @@
         line-height: 1rem;
         text-align: center;
         padding-left: 0rem;
+        min-width: 90%;
+      }
+      .invite {
+        margin: 1rem;
+        min-width: 80%;
+        max-width: 80%;
       }
 
     }
-
+    .invite {
+      margin: 1rem;
+      font-size: 1.1rem;
+    }
   }
 }

@@ -122,7 +122,7 @@ const Skills = forwardRef((props, ref) => {
         <motion.h2 variants={slideLeftAnimation}>Technical Skills</motion.h2>
         <div className='skills-container'>
           {techSkills.map((techSkill) => (
-            <Skill techSkill={techSkill} />
+            <Skill key={techSkill[0]} techSkill={techSkill} />
           ))}
         </div>
 
