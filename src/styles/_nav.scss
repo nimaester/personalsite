@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  padding: 1rem 4rem;
+  padding: 2rem 4rem;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -58,13 +58,13 @@ nav {
 
 .sticky {
     color: black;
-    background-color: black;
+    background-color: #112d4e;
 }
 
 
 @media screen and (max-width: 865px) {
   nav {
-    background-color: black;
+    background-color: #112d4e;
     padding: 1rem 2rem 1rem 2rem;
     .nav-link {
       display: none;

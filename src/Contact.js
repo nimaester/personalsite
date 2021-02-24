@@ -1,7 +1,8 @@
 import React, { forwardRef } from "react";
 import emailjs from "emailjs-com";
-import { slideUpAnimation, fadeAnimation } from "./animations/animation";
-import { motion } from "framer-motion";
+import { fadeAnimation, primaryFadeAnimation, slideRightAnimation } from "./animations/animation";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import ScrollTop from "./animations/scrollTop";
 
 const Contact = forwardRef((props, ref) => {
@@ -28,19 +29,31 @@ const Contact = forwardRef((props, ref) => {
   };
 
   // <ScrollTop /> line 39
+
+  const controls = useAnimation();
+  const [element, view] = useInView();
+
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
+
   return (
+    <div ref={element}>
     <motion.section
       ref={ref}
       className='contact'
-      variants={fadeAnimation}
+      variants={primaryFadeAnimation}
       initial='hidden'
-      animate='show'
+      animate={controls}
       exit='exit'
+      id="contact"
     >
 
       <form className='contact-form' onSubmit={sendEmail}>
         <div className='name'>
-        <motion.h2 variants={fadeAnimation} >Contact Me</motion.h2>
+        <motion.h2 variants={slideRightAnimation} >Contact Me</motion.h2>
           <input
             className='input-name'
             spellCheck='false'
@@ -76,6 +89,7 @@ const Contact = forwardRef((props, ref) => {
         </div>
       </form>
     </motion.section>
+    </div>
   );
 });
 

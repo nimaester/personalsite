@@ -12,6 +12,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -61,6 +62,7 @@ function App() {
         <Experience key='education ' ref={educationRef} />
         <Contact key='contact' ref={contactRef} />
         </AnimatePresence>
+        <Footer />
       </HashRouter>
     </div>
   );

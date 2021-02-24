@@ -1,47 +1,18 @@
-.education{
+.experience{
   text-align: center;
-  padding: 6rem 5rem 6rem 5rem;
-  background-color: #364B71;
   height: 100vh;
-  h2, h3, h4, h5 {
-    // color: white;
+  padding: 4rem 4rem 0rem 4rem;
+  background-color: #dbe2ef;
+  h2,
+  h3,
+  h4,
+  h5 {
     font-weight: lighter;
   }
   h2 {
     font-size: 3.5rem;
-    // color: #00adb5;
-    padding-bottom: 6rem;
-  }
-  h3 {
-    font-size: 2rem;
-    // color: #00adb5;
-    margin-bottom: 1rem;
-    font-weight: bold;
-  }
-  h4 {
-    font-size: 1.5rem;
-    // color: #00adb5;
-    margin-bottom: 1rem;
-  }
-  a {
-    text-decoration: none;
-  }
-  .edu-img {
-    max-width: 60vh;
-    margin-bottom: 1rem;
-  }
-
-  .education-container {
-    padding-bottom: 2rem;
-    p {
-      // color: #cccccc;
-      margin-bottom: 1rem;
-      font-size: larger;
-    }
-  }
-
-  .certs {
-    margin: 3rem 3rem 0rem 3rem;
+    color: #3f72af;
+    margin-top: 2rem;
   }
 }
 
@@ -49,55 +20,15 @@
 
 
 @media screen and (max-width: 865px) {
-  .education {
-    padding: 6rem 2rem 0rem 2rem;
-    .title {
-      padding-bottom: 3rem;
-    }
-    .desc-org {
-      display: none;
-    }
-    .edu-img {
-      max-width: 60vw;
-      margin-bottom: 1rem;
-    }
+  .experience {
+    padding: 3rem 2rem 0rem 2rem;
     h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      padding-bottom: 0rem;
     }
-    .education-container {
-      padding: 1rem 0rem 0rem 0rem;
-      p {
-        line-height: 1rem;
-        font-size: 1.2rem;
-      }
-    }
-
   }
 }
 
 @media screen and (max-width: 420px) {
-  .education {
-    h2 {
-      font-size: 2rem;
-    }
-    h4 {
-      font-size: 1rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-    }
-    .education-container {
-      p {
-        padding-top: -2rem;
-        font-size: 1rem !important;
-      }
-      .ol-school {
-        margin-top: -1rem;
-      }
-    }
-    .edu-img {
-      max-width: 30vh;
-      margin-bottom: 1rem;
-    }
-  }
+
 }

@@ -1,5 +1,4 @@
 import React, { forwardRef } from "react";
-import { useHistory } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import {
   slideLeftAnimation,
@@ -19,14 +18,14 @@ const Hero = forwardRef((props, ref) => {
     controls.start("hidden");
   }
 
-  const scrollSmoothHandler = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth"});
-  };
+  const handleClick = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: "smooth"});
+  }
 
   return (
     <div ref={ref}>
       <motion.section
-      id="hero"
+        id="hero"
         ref={element}
         className='hero'
         variants={primaryFadeAnimation}
@@ -40,7 +39,7 @@ const Hero = forwardRef((props, ref) => {
                 I'm{" "}
                 <motion.span
                   variants={fadeAnimation}
-                  style={{ color: "#00adb5" }}
+                  style={{ color: "#dbe2ef" }}
                 >
                   Nim,
                 </motion.span>
@@ -51,12 +50,12 @@ const Hero = forwardRef((props, ref) => {
               <br />
               <br />
             </div>
-            <motion.button variants={fadeAnimation}>
+            <motion.button onClick={handleClick} variants={fadeAnimation}>
               Contact Me
             </motion.button>
           </motion.div>
-          <p className='quotes'>“Whatever good things we build end up building us.”</p>
-        <p className='quotee'>-- Jim Rohn</p>
+          <p className='quotes quote-hero'>“Whatever good things we build end up building us.”</p>
+        <p className='quotee quote-hero'>-- Jim Rohn</p>
         </div>
       </motion.section>
     </div>

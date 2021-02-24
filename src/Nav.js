@@ -23,6 +23,7 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
       if (scrollCheck !== scroll) {
         setScroll(scrollCheck)
       }
+
     })
   })
 
@@ -61,8 +62,8 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
   // }, [location, refs]);
 
   return (
-    <nav className={scroll ? "sticky" : "normal"}>
-      <h3>Welcom3</h3>
+    <nav id="nav" className={scroll ? "sticky" : "normal"}>
+      <h3></h3>
       <ul className='nav-bar'>
       <li className='primary nav-link'>
           <NavLink onClick={()=>{scrollSmoothHandler(refs.heroRef)}} to='/' activeClassName='selected' replace>

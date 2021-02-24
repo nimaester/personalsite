@@ -1,9 +1,11 @@
 .contact{
-  height: 100vh;
+  height: 105vh;
   padding: 6rem 5rem 6rem 5rem;
+  background-color: #f9f7f7;
   h2 {
-    font-size: 3.5rem;
-    // color: #00adb5;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #3f72af;
     padding-bottom: 6rem;
   }
   // padding: 6rem;
@@ -17,8 +19,8 @@
   }
   .input-name, .input-email {
     height: 6vh;
-    // background-color: #222831;
-    border: 1px solid rgba(253, 251, 245, 0.3);
+    background-color: #dbe2ef;
+    border: 1px solid #112d4eaf;
     margin: 1rem;
     padding: 1rem;
     font-size: 1.2rem;
@@ -30,8 +32,8 @@
   .input-message {
     height: 22vh;
     width: 20rem;
-    // background-color: #222831;
-    border: 1px solid rgba(253, 251, 245, 0.3);
+    background-color: #dbe2ef;
+    border: 1px solid #112d4eaf;
     margin: 1rem;
     padding: 1rem;
     font-size: 1.2rem;
@@ -42,21 +44,25 @@
 
   .send {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #00adb5;
-    background: transparent;
-    // color: white;
+    border-radius: 50px;
+    background: white;
+    color: black;
     transition: all 0.5s ease;
+    margin-bottom: 5rem;
     &:hover{
-      background-color: #00adb5;
+      background-color: #3f72af;
+      color: rgb(197, 197, 197);
     }
   }
 }
 
 @media screen and (max-width: 865px) {
   .contact {
+    padding: 5rem 5rem 0rem 5rem;
+    height: 95vh;
     h2 {
       font-size: 2.5rem;
     }
@@ -65,14 +71,9 @@
       width: 75vw;
     }
   }
-  .send {
-    margin: 3rem
-  }
+
 }
 
 @media screen and (max-width: 420px) {
-  .contact {
-    height: 100vh;
-  }
 
 }

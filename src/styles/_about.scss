@@ -4,11 +4,11 @@
   height: 105vh;
   width: 100%;
   align-items: center;
-  color: white;
+  color: rgb(197, 197, 197);
   justify-content: center;
   background: linear-gradient(
-    rgba(0, 132, 255, 0.486),
-    #2222229f
+    #3f71afab,
+    #112d4eaf
   ),
     url(../img//wallpaper.jpg) center no-repeat;
   background-size: cover;
@@ -16,7 +16,6 @@
   h2 {
     font-weight: lighter;
     font-size: 3rem;
-    margin-right: 15px;
   }
   span {
     font-weight: bold;
@@ -24,35 +23,42 @@
 
   button {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     padding: 1rem 2rem;
     // border: 3px solid #00adb5;
-    background: transparent;
-    color: white;
+    background: white;
+    color: black;
+    border-radius: 50px;
     transition: all 0.5s ease;
 
     &:hover {
-      background-color: #00adb5;
+      background-color: #3f72af;
+      color: rgb(197, 197, 197);
     }
+    &:focus {
+      outline: none;
+    }
+  }
+  .quote-hero {
+    color: rgb(197, 197, 197);
   }
 }
 
 .about-me {
   text-align: center;
   padding: 4rem 4rem 0rem 4rem;
-  // background-color: #222831;
+  background-color: #f9f7f7;
   h2,
   h3,
   h4,
   h5 {
-    // color: white;
+
     font-weight: lighter;
   }
   h2 {
     font-size: 3.5rem;
-    // color: #00adb5;
-    // padding-bottom: 6rem;
+    color: #3f72af;
     margin-top: 2rem;
   }
 
@@ -76,7 +82,7 @@
       border-radius: 500px;
       min-width: 280px;
       max-width: 280px;
-      border: solid 2px blue;
+      border: solid 10px #3f72af;
     }
     .bio {
       min-width: 330px;
@@ -86,6 +92,7 @@
       line-height: 1.5;
     }
     .full-bio {
+      margin-top: -2rem;
       min-width: 330px;
       max-width: 330px;
       text-align: left;
@@ -94,12 +101,12 @@
     }
   }
   .entry-type {
-    font-size: 1.6rem;
-    color: blue;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #3f72af;
   }
   .entry {
-    line-height: 1.6rem;
-    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -146,6 +153,9 @@
         margin-top: 2rem;
         width: 95%;
         padding: 0rem;
+        p {
+          text-align: center;
+        }
       }
       .my-pic {
         width: 95%;
@@ -154,9 +164,15 @@
       .full-bio {
         width: 95%;
         margin-top: 2rem;
-        line-height: 1rem;
+        line-height: 1.5;
         text-align: center;
         padding-left: 0rem;
+        p {
+          line-height: 1.2;
+        }
+        .entry-type {
+          margin-top: 2rem;
+        }
       }
     }
   }

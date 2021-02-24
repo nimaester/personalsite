@@ -1,7 +1,7 @@
 import React, { Fragment, forwardRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { slideUpAnimation, fadeAnimation, primaryFadeAnimation, slideRightAnimation } from "./animations/animation";
+import { fadeAnimation, primaryFadeAnimation, slideRightAnimation } from "./animations/animation";
 import fbLogo from "./img/fb.png";
 import linkLogo from "./img/linkin.png";
 import face from "./img/face.png";
@@ -30,7 +30,7 @@ const AboutMe = forwardRef((props, ref) => {
         <div className='cards'>
           <div className='bio'>
             <p>
-            I am a full-stack software engineer with a keen eye for details and I am versatile that can adapt to any situation. I love learning new things about coding. It's amazing that you can build things that you can imagine. My hobbies outside coding are taking walks, trying out new types of food, and learning photography.
+            I am a full-stack software engineer with a keen eye for details and I am versatile that can adapt to any situation. I am a firm believer in structure and teamwork. I love learning new things about coding. It's amazing that you can build things that you can imagine.
 
             </p>
           </div>
@@ -41,11 +41,13 @@ const AboutMe = forwardRef((props, ref) => {
             <span className="entry-type">Name:</span>
             <p className="entry">Nim Tayo</p>
 
-            <span className="entry-type">Date of Birth:</span>
-            <p className="entry">07/26/1987</p>
-
             <span className="entry-type">Location:</span>
             <p className="entry">Hayward CA, USA</p>
+
+            <span className="entry-type">Hobbies:</span>
+            <p className="entry">- Listening to music</p>
+            <p className="entry">- Trying new foods</p>
+            <p className="entry">- Photography</p>
           </div>
         </div>
         <p>Let's connect! Can't wait to hear from you.</p>
@@ -59,7 +61,6 @@ const AboutMe = forwardRef((props, ref) => {
         </div>
         <p className='quotes'>“Be yourself; everyone else is already taken.”</p>
         <p className='quotee'>-- Oscar Wilde</p>
-        <hr className='ab' />
       </motion.div>
     </section>
   );

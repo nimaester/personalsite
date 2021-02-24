@@ -4,7 +4,6 @@ import { motion, useAnimation } from "framer-motion";
 import {
   primaryFadeAnimation,
   slideLeftAnimation,
-  slideRightAnimation,
   slideUpAnimation,
 } from "./animations/animation";
 import { useInView } from "react-intersection-observer";
@@ -121,7 +120,7 @@ const Skills = forwardRef((props, ref) => {
         animate={controls}
         exit='exit'
       >
-        <motion.h2 variants={slideRightAnimation}>Technical Skills</motion.h2>
+        <motion.h2 variants={slideLeftAnimation}>Technical Skills</motion.h2>
         <div className='skills-container'>
           {techSkills.map((techSkill) => (
             <Skill techSkill={techSkill} />
@@ -133,7 +132,6 @@ const Skills = forwardRef((props, ref) => {
           how to think."
         </p>
         <p className='quotee'>-- Steve Jobs</p>
-        <hr />
       </motion.section>
     </div>
   );
