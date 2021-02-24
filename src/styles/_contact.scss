@@ -1,5 +1,4 @@
 .contact{
-  height: 105vh;
   padding: 6rem 5rem 6rem 5rem;
   background-color: #f9f7f7;
   h2 {
@@ -53,7 +52,7 @@
     transition: all 0.5s ease;
     margin-bottom: 5rem;
     &:hover{
-      background-color: #3f72af;
+      background-color: #ef8d32;
       color: rgb(197, 197, 197);
     }
   }
@@ -62,7 +61,6 @@
 @media screen and (max-width: 865px) {
   .contact {
     padding: 5rem 5rem 0rem 5rem;
-    height: 95vh;
     h2 {
       font-size: 2.5rem;
     }

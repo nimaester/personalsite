@@ -1,5 +1,4 @@
 import React, { forwardRef } from "react";
-import StarRatings from "react-star-ratings";
 import { motion, useAnimation } from "framer-motion";
 import {
   primaryFadeAnimation,

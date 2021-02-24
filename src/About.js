@@ -2,6 +2,7 @@ import React, { Fragment, forwardRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeAnimation, primaryFadeAnimation, slideRightAnimation } from "./animations/animation";
+
 import fbLogo from "./img/fb.png";
 import linkLogo from "./img/linkin.png";
 import face from "./img/face.png";

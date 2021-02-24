@@ -27,8 +27,9 @@ nav {
     letter-spacing: 2px;
   }
 
-  li:hover, .fas:hover {
+  li:hover, .fas:hover, a:hover {
     cursor: pointer;
+    color: #ef8d32;
   }
   .primary {
     margin-left: -3rem;

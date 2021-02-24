@@ -1,18 +1,36 @@
 .experience{
-  text-align: center;
-  height: 100vh;
   padding: 4rem 4rem 0rem 4rem;
   background-color: #dbe2ef;
-  h2,
-  h3,
-  h4,
-  h5 {
+  height: 100vh;
+  h2, h3{
     font-weight: lighter;
+    text-align: center;
   }
   h2 {
     font-size: 3.5rem;
     color: #3f72af;
     margin-top: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 500;
+
+
+  }
+  .exp-container {
+    text-align: left;
+  }
+
+  .education, .work {
+    padding: 2rem 10rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 250px 600px;
+  }
+  .school-name {
+    margin-top: 10px;
+    grid-row: 2/3;
   }
 }
 
