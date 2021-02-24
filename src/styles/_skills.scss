@@ -61,17 +61,23 @@
     }
     .skills-container {
       padding: 4rem 4rem 0rem 4rem;
-      grid-template-columns: repeat(3, 10rem)
+      grid-template-columns: repeat(3, 9rem)
     }
     .skill-desc {
       line-height: 1.4;
       font-size: 0.7rem;
     }
+    .skill-img {
+      width: 70%;
+    }
   }
 
   .tech-skill {
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
+    h3 {
+      padding-top: 1rem;
+    }
   }
 
 }

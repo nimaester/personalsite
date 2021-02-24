@@ -66,7 +66,7 @@ const Skills = forwardRef((props, ref) => {
     [
       "Node.js",
       nodeLogo,
-      "A platform built on Chrome's JavaScript runtime for easily building scalable network applications",
+      "A platform built on Chrome's JavaScript runtime for easily building scalable network apps",
     ],
     [
       "MySQL",
@@ -79,7 +79,7 @@ const Skills = forwardRef((props, ref) => {
       "Document-oriented database which stores data in JSON-like documents with dynamic schema",
     ],
     [
-      "Amazon Web Services",
+      "AWS",
       awsLogo,
       "Provides servers, storage, networking, remote computing, mobile development, and security",
     ],
