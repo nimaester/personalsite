@@ -3,6 +3,7 @@ import { useLocation, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { lineAnimation } from "./animations/animation"
+// import logo from "./img/logo.png";
 
 const Nav = ({ refs, showLinks, setShowLinks }) => {
   const location = useLocation();
@@ -35,34 +36,9 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
     }
   }
 
-  // useEffect(() => {
-  //   console.log(location.pathname);
-  //   switch (location.pathname) {
-  //     case "/":
-  //       scrollSmoothHandler(refs.heroRef);
-  //       break;
-  //     case "/about":
-  //       scrollSmoothHandler(refs.aboutRef);
-  //       break;
-  //     case "/skills":
-  //       scrollSmoothHandler(refs.skillsRef);
-  //       break;
-  //     case "/projects":
-  //       scrollSmoothHandler(refs.projectsRef);
-  //       break;
-  //     case "/education":
-  //       scrollSmoothHandler(refs.educationRef);
-  //       break;
-  //     case "/contact":
-  //       scrollSmoothHandler(refs.contactRef);
-  //       break;
-  //     default:
-  //     // ignore
-  //   }
-  // }, [location, refs]);
-
   return (
     <nav id="nav" className={scroll ? "sticky" : "normal"}>
+
       <h3></h3>
       <ul className='nav-bar'>
       <li className='primary nav-link'>
@@ -91,7 +67,7 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
         </li>
         <li className='nav-link'>
         <NavLink onClick={()=>{scrollSmoothHandler(refs.educationRef)}} to='/education' activeClassName='selected' replace>
-          Education/Work
+          Background
         </NavLink>
 
         </li>

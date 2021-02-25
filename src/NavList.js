@@ -56,7 +56,7 @@ const NavList = ({refs, setShowLinks, showLinks}) => {
           />
         </li>
         <li onClick={closeNavLinks} className='nav-list-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.educationRef)}} to='/education' activeClassName='selected' replace>Education/Work</NavLink>
+          <NavLink onClick={()=>{scrollSmoothHandler(refs.educationRef)}} to='/education' activeClassName='selected' replace>Background</NavLink>
           <motion.div
             transition={{ duration: 0.75 }}
             animate={{
