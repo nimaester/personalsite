@@ -1,49 +1,55 @@
 .experience {
   padding: 4rem 4rem 0rem 4rem;
   background-color: #dbe2ef;
-  height: 100vh;
   h2,
   h3 {
-    font-weight: lighter;
-    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
   h2 {
+    text-align: center;
     font-size: 3.5rem;
     color: #3f72af;
     margin-top: 2rem;
   }
-  h3 {
-    font-size: 1.8rem;
-    line-height: 3rem;
-    font-weight: 500;
-    margin: 4rem 0rem 2rem 0rem;
-  }
-
   .exp-type {
+    font-size: 2rem;
+    padding: 3rem 3rem 3rem 3rem;
+    font-weight: 500;
     text-align: left;
+    max-width: 980px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: 2fr 0.5fr 3fr;
-  }
-
-  .title {
-    grid-column: 1/2;
-    min-width: 330px;
-    max-width: 330px;
-  }
-
-  .description {
-    grid-column: 3/4;
-    min-width: 330px;
-    max-width: 330px;
-  }
-
-  .grid-container {
+  .exp-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    padding: 0rem 3rem 1rem 3rem;
+
+  }
+
+  .exp-entry {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 0rem 3rem 0rem;
+  }
+
+  .exp-desc {
+    max-width: 630px;
+    line-height: 1.7;
+  }
+
+  .exp-details {
+    margin-right: 2rem;
+    max-width: 230px;
+    min-width: 230px;
+    color: #ef8d32;
+  }
+
+  .year {
+    color: black;
+    font-size: 1rem;
+
   }
 }
 
@@ -53,6 +59,13 @@
     h2 {
       font-size: 2.5rem;
       padding-bottom: 0rem;
+    }
+    .exp-entry {
+      flex-direction: column;
+      padding: 0rem 0rem 3rem 0rem;
+    }
+    .exp-details {
+      padding-bottom: 1rem;
     }
   }
 }

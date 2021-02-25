@@ -88,6 +88,9 @@ const Contact = forwardRef((props, ref) => {
           <input className='send' type='submit' value='Send' />
         </div>
       </form>
+
+      <p className='quotes'>“You expecting a quote here?”</p>
+      <p className='quotee end'>-- me.</p>
     </motion.section>
     </div>
   );
