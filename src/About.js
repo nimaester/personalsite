@@ -39,15 +39,15 @@ const AboutMe = forwardRef((props, ref) => {
             <img className='my-pic' src={face} alt='' />
           </div>
           <div className='full-bio'>
-            <span className="entry-type">Name:</span>
+            <p className="entry-type">Name:</p>
             <p className="entry">Nim Tayo</p>
 
-            <span className="entry-type">Location:</span>
+            <p className="entry-type">Location:</p>
             <p className="entry">Hayward CA, USA</p>
 
-            <span className="entry-type">Hobbies:</span>
+            <p className="entry-type">Hobbies:</p>
             <p className="entry">- Listening to music</p>
-            <p className="entry">- Trying new foods</p>
+            <p className="entry">- Watching Sports</p>
             <p className="entry">- Photography</p>
           </div>
         </div>
