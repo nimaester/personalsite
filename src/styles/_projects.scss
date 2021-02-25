@@ -1,8 +1,14 @@
+$orange: #ef8d32;
+$d-blue: #112d4e;
+$l-blue: #3f72af;
+$bg-1: #dbe2ef;
+$bg-2: #f9f7f7;
+
 .projects {
   text-align: center;
   height: 100vh;
   padding: 4rem 4rem 0rem 4rem;
-  background-color: #f9f7f7;
+  background-color: $bg-2;
   h2,
   h3,
   h4,
@@ -11,7 +17,7 @@
   }
   h2 {
     font-size: 3.5rem;
-    color: #3f72af;
+    color: $l-blue;
     margin-top: 2rem;
   }
 }

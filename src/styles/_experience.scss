@@ -1,12 +1,18 @@
+$orange: #ef8d32;
+$d-blue: #112d4e;
+$l-blue: #3f72af;
+$bg-1: #dbe2ef;
+$bg-2: #f9f7f7;
+
 .experience {
   padding: 4rem 4rem 0rem 4rem;
-  background-color: #dbe2ef;
+  background-color: $bg-1;
   h2 {
     font-weight: lighter;
     letter-spacing: 2px;
     text-align: center;
     font-size: 3.5rem;
-    color: #3f72af;
+    color: $l-blue;
     margin: 2rem 0rem 4rem 0rem;
   }
   h3 {
@@ -44,7 +50,7 @@
     margin-right: 2rem;
     max-width: 230px;
     min-width: 230px;
-    color: #ef8d32;
+    color: $orange;
   }
 
   .year {
@@ -72,7 +78,4 @@
       padding: 0rem 1rem 1rem 1rem;
     }
   }
-}
-
-@media screen and (max-width: 420px) {
 }

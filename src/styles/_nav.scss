@@ -1,13 +1,19 @@
+$orange: #ef8d32;
+$d-blue: #112d4e;
+$l-blue: #3f72af;
+$bg-1: #dbe2ef;
+$bg-2: #f9f7f7;
+
 nav {
   display: flex;
   padding: 2rem 4rem;
+  margin-bottom: 2rem;
   justify-content: space-between;
   position: fixed !important;
   top: 0;
   left: 0;
   z-index: 10;
   transition: ease 0.5s;
-  align-items: center;
   width: 100%;
 
   ul {
@@ -20,6 +26,7 @@ nav {
     padding-left: 2rem;
     position: relative;
   }
+
   a {
     text-decoration: none !important;
     color: white;
@@ -29,17 +36,10 @@ nav {
 
   li:hover, .fas:hover, a:hover {
     cursor: pointer;
-    color: #ef8d32;
+    color: $orange;
   }
   .primary {
     margin-left: -3rem;
-  }
-
-  .current-tab {
-    width: 0;
-    height: 0.3rem;
-    margin-top: 0.3rem;
-    background: #00adb5;
   }
 
   .fa-bars{
@@ -58,14 +58,13 @@ nav {
 }
 
 .sticky {
-    color: black;
-    background-color: #112d4e;
+    background-color: $d-blue;
 }
 
 
 @media screen and (max-width: 865px) {
   nav {
-    background-color: #112d4e;
+    background-color: $d-blue;
     padding: 1rem 2rem 1rem 2rem;
     .nav-link {
       display: none;

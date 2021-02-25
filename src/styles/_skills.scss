@@ -1,14 +1,19 @@
+$orange: #ef8d32;
+$d-blue: #112d4e;
+$l-blue: #3f72af;
+$bg-1: #dbe2ef;
+$bg-2: #f9f7f7;
+
 .skills {
   padding: 2.5rem 4rem 0rem 4rem;
   text-align: center;
-  // color: white;
-  background-color: #dbe2ef;
+  background-color: $bg-1;
 
   h2 {
     font-weight: lighter;
     font-size: 3.5rem;
     margin-top: 3rem;
-    color: #3f72af;
+    color: $l-blue;
   }
   .skills-container {
     padding: 3rem 0rem 3rem 0rem;
@@ -19,21 +24,18 @@
 }
 
 .tech-skill {
-  background-color: rgb(240, 239, 239);
+  background-color: rgb(236, 236, 236);
   padding: 1rem;
   margin: 1rem;
   border-radius: 20px;
   &:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: $l-blue;
     cursor: pointer;
     transform: scale(1.2);
   }
 
   .skill-desc {
     text-align: left;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     font-size: 0.8rem;
     line-height: 1.5;
     padding: 1rem;
@@ -43,7 +45,7 @@
     left: 0;
     right: 0;
     background: rgba(29, 106, 154, 0.72);
-    color: #fff;
+    color: white;
     visibility: hidden;
     opacity: 0;
     border-radius: 20px;

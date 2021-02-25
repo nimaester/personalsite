@@ -1,9 +1,15 @@
+$orange: #ef8d32;
+$d-blue: #112d4e;
+$l-blue: #3f72af;
+$bg-1: #dbe2ef;
+$bg-2: #f9f7f7;
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #112d4e;
-  border-top: solid 15px #3f72af;
+  background-color: $d-blue;
+  border-top: solid 15px $l-blue;
   padding: 0rem 6rem 0rem 6rem;
   ul {
     display: flex;
@@ -23,7 +29,7 @@
 
   li:hover {
     cursor: pointer;
-    color: #ef8d32;
+    color: $orange;
   }
 
   .foot {

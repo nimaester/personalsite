@@ -89,10 +89,3 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
 };
 
 export default Nav;
-
-
-// <motion.div
-//           transition={{ duration: 0.75 }}
-//           animate={{ width: location.pathname === "/skills" ? "100%" : 0 }}
-//           className='current-tab'
-//         />

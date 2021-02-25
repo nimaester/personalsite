@@ -1,3 +1,9 @@
+$orange: #ef8d32;
+$d-blue: #112d4e;
+$l-blue: #3f72af;
+$bg-1: #dbe2ef;
+$bg-2: #f9f7f7;
+
 .nav-list {
   z-index: 10;
   position: fixed;
@@ -6,7 +12,7 @@
   padding-top: 2rem;
   width: 25vw;
   height: 60vh;
-  background-color: #112d4e;
+  background-color: $d-blue;
   transition: ease 0.5s;
   transform: translateX(100%);
   ul {
@@ -31,7 +37,7 @@
     width: 0;
     height: 0.2rem;
     margin-top: 0.4rem;
-    background: #ef8d32;
+    background: $orange;
   }
 }
 
