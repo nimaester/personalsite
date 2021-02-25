@@ -42,14 +42,15 @@ $bg-2: #f9f7f7;
   }
 
   .exp-desc {
-    max-width: 630px;
+    max-width: 600px;
+    min-width: 600px;
     line-height: 1.7;
   }
 
   .exp-details {
     margin-right: 2rem;
-    max-width: 230px;
-    min-width: 230px;
+    max-width: 210px;
+    min-width: 210px;
     color: $orange;
   }
 
@@ -77,5 +78,11 @@ $bg-2: #f9f7f7;
     .exp-container {
       padding: 0rem 1rem 1rem 1rem;
     }
+    .exp-desc {
+      min-width: auto;
+    }
   }
+}
+
+@media screen and (max-width: 420px) {
 }

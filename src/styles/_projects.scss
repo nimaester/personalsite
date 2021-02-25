@@ -6,8 +6,7 @@ $bg-2: #f9f7f7;
 
 .projects {
   text-align: center;
-  height: 100vh;
-  padding: 4rem 4rem 0rem 4rem;
+  padding: 4rem 1rem 0rem 1rem;
   background-color: $bg-2;
   h2,
   h3,
@@ -20,14 +19,79 @@ $bg-2: #f9f7f7;
     color: $l-blue;
     margin-top: 2rem;
   }
+  p {
+    line-height: 1.5;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .project {
+    display: flex;
+    max-width: 870px;
+    margin-top: 3rem;
+  }
+  img {
+    width: 15rem;
+    border-radius: 10px;
+  }
+  .project-desc {
+    text-align: left;
+    margin-left: 2rem;
+    padding: 2rem;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+  }
+
+  .two {
+    margin-left: 0rem;
+    margin-right: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    margin: 3rem 2rem 0rem 0rem;
+    padding: 10px;
+    border-radius: 10px;
+    &:hover {
+      background-color: $orange;
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .project-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $orange;
+    padding-bottom: 2rem;
+  }
+
+
 }
 
 @media screen and (max-width: 865px) {
   .projects {
-    padding: 3rem 2rem 0rem 2rem;
+    padding: 3rem 1rem 0rem 1rem;
     h2 {
       font-size: 2.5rem;
       padding-bottom: 0rem;
     }
+    img, .project-desc {
+      width: 80%;
+      margin: 0rem;
+    }
+    .project {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .second {
+      flex-direction: column-reverse;
+    }
+
   }
 }

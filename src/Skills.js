@@ -22,6 +22,9 @@ import nginxLogo from "./icons/nginx.png";
 import nodeLogo from "./icons/node.png";
 import reactLogo from "./icons/react.png";
 import rubyLogo from "./icons/ruby.png";
+import sassLogo from "./icons/sass.png";
+import gitLogo from "./icons/git.png";
+import postmanLogo from "./icons/postman.png";
 
 import Skill from "./Skill";
 
@@ -52,9 +55,26 @@ const Skills = forwardRef((props, ref) => {
       "Cascading Style Sheets, describes how HTML elements are to be displayed on screen",
     ],
     [
+      "Sass",
+      sassLogo,
+      "A preprocessor scripting language that is interpreted or compiled into CSS"
+
+    ],
+    [
       "React",
       reactLogo,
       "Allows developers to create large web applications that can change data, without reloading the page",
+    ],
+    [
+      "Git",
+      gitLogo,
+      "Software for tracking changes in any set of files, usually used for coordinating work among programmers "
+
+    ],
+    [
+      "Postman",
+      postmanLogo,
+      "Postman is a collaboration platform for API development. It simplifies each step of building an API"
     ],
     [
       "Ruby",
