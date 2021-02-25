@@ -85,12 +85,12 @@ $bg-2: #f9f7f7;
       margin: 0rem;
     }
     .project {
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
     }
     .second {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
 
   }
