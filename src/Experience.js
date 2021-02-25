@@ -59,22 +59,20 @@ const Experience = forwardRef((props, ref) => {
         animate={controls}
         exit='exit'
       >
-        <motion.h2 variants={slideLeftAnimation}>Experience</motion.h2>
-
-        <div className='exp-container'>
-          <h3 className='exp-type'>Education</h3>
-        </div>
+        <motion.h2 variants={slideLeftAnimation}>Education</motion.h2>
 
         {schoolData.map(data => (
-            <ExperienceEntry key={data[0]} data={data} />
+          <motion.div variants={fadeAnimation} key={data[0]}>
+            <ExperienceEntry data={data} />
+          </motion.div>
         ))}
 
-        <div className='exp-container'>
-          <h3 className='exp-type'>Work Experience</h3>
-        </div>
+        <motion.h2 variants={slideLeftAnimation}>Work Experience</motion.h2>
 
         {workData.map(data => (
-          <ExperienceEntry key={data[0]} data={data} />
+          <motion.div key={data[0]} variants={fadeAnimation}>
+            <ExperienceEntry data={data} />
+          </motion.div>
         ))}
 
         <p className='quotes'>“The only source of knowledge is experience”</p>

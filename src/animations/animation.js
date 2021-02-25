@@ -5,7 +5,7 @@ export const primaryFadeAnimation = {
   show: {
     opacity:1,
     transition: {
-      duration: 0.6,
+      duration: 0.8,
       when: "beforeChildren",
       staggerChildren: 0.1
     }
@@ -13,7 +13,7 @@ export const primaryFadeAnimation = {
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.8,
       // staggerChildren: 0.1
     }
   }
@@ -79,7 +79,7 @@ export const fadeAnimation = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.4,
+      duration: 0.8,
       ease: "easeOut",
       when: "beforeChildren"
     }

@@ -1,16 +1,18 @@
 .experience {
   padding: 4rem 4rem 0rem 4rem;
   background-color: #dbe2ef;
-  h2,
-  h3 {
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
   h2 {
+    font-weight: lighter;
+    letter-spacing: 2px;
     text-align: center;
     font-size: 3.5rem;
     color: #3f72af;
-    margin-top: 2rem;
+    margin: 2rem 0rem 4rem 0rem;
+  }
+  h3 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
   }
   .exp-type {
     font-size: 2rem;
@@ -25,7 +27,6 @@
     justify-content: center;
     align-items: center;
     padding: 0rem 3rem 1rem 3rem;
-
   }
 
   .exp-entry {
@@ -55,7 +56,7 @@
 
 @media screen and (max-width: 865px) {
   .experience {
-    padding: 3rem 2rem 0rem 2rem;
+    padding: 3rem 1rem 0rem 1rem;
     h2 {
       font-size: 2.5rem;
       padding-bottom: 0rem;
@@ -66,6 +67,9 @@
     }
     .exp-details {
       padding-bottom: 1rem;
+    }
+    .exp-container {
+      padding: 0rem 1rem 1rem 1rem;
     }
   }
 }

@@ -39,7 +39,7 @@ const Hero = forwardRef((props, ref) => {
                 I'm{" "}
                 <motion.span
                   variants={fadeAnimation}
-                  style={{ color: "#dbe2ef" }}
+                  style={{ color: "#ef8d32" }}
                 >
                   Nim,
                 </motion.span>
