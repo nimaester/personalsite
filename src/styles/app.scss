@@ -38,6 +38,21 @@ body {
   }
 }
 
+@media screen and (max-width: 420px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+  button {
+    font-size: 0.8rem !important;
+  }
+  .quotes {
+    padding-top: 1rem !important;
+  }
+  .quotee {
+    padding-bottom: 2rem;
+  }
+}
+
 @import "./about";
 @import "./nav";
 @import "./experience";

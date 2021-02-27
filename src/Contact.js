@@ -40,9 +40,9 @@ const Contact = forwardRef((props, ref) => {
   }
 
   return (
-    <div ref={element}>
+    <div ref={ref}>
     <motion.section
-      ref={ref}
+      ref={element}
       className='contact'
       variants={primaryFadeAnimation}
       initial='hidden'

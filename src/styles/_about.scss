@@ -135,7 +135,7 @@ $bg-2: #f9f7f7;
 @media screen and (max-width: 865px) {
   .hero {
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 12rem 2rem 0rem 2rem;
     button {
       width: 100%;
@@ -151,7 +151,7 @@ $bg-2: #f9f7f7;
   .about-me {
     padding: 3rem 2rem 0rem 2rem;
     h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       padding-bottom: 0rem;
     }
     .cards {
@@ -205,9 +205,6 @@ $bg-2: #f9f7f7;
 
   .about-me {
     padding: 1rem;
-    p {
-      font-size: 1rem !important;
-    }
     h2 {
       font-size: 2rem;
       padding-bottom: 0rem;
