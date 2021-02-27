@@ -65,12 +65,13 @@ $bg-2: #f9f7f7;
   .experience {
     padding: 3rem 1rem 0rem 1rem;
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding-bottom: 0rem;
     }
     .exp-entry {
       flex-direction: column;
       padding: 0rem 0rem 3rem 0rem;
+      width: 80%;
     }
     .exp-details {
       padding-bottom: 1rem;
@@ -85,4 +86,13 @@ $bg-2: #f9f7f7;
 }
 
 @media screen and (max-width: 420px) {
+  .experience {
+    h2 {
+      font-size: 2rem;
+    }
+    .exp-entry {
+      padding: 0rem 0rem 3rem 0rem;
+      width: 95%;
+    }
+  }
 }
