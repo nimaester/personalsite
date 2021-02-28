@@ -78,7 +78,7 @@ $bg-2: #f9f7f7;
   .projects {
     padding: 3rem 1rem 0rem 1rem;
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding-bottom: 0rem;
     }
     .project-desc {
@@ -110,6 +110,9 @@ $bg-2: #f9f7f7;
 
 @media screen and (max-width: 420px) {
   .projects {
+    h2 {
+      font-size: 2rem;
+    }
     padding: 2rem 1rem 0rem 1rem;
     img, .project-desc {
       width: 95%;
