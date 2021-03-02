@@ -3,7 +3,6 @@ import { useLocation, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { lineAnimation } from "./animations/animation";
-import resume from "./files/resume.pdf";
 
 const Nav = ({ refs, showLinks, setShowLinks }) => {
   const location = useLocation();
