@@ -37,6 +37,7 @@ nav {
   li:hover, .fas:hover, a:hover {
     cursor: pointer;
     color: $orange;
+    transform: scale(1.2);
   }
   .primary {
     margin-left: -3rem;

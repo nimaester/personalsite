@@ -19,17 +19,17 @@ $bg-2: #f9f7f7;
   }
   li {
     padding-left: 2.5rem;
+    &:hover {
+      cursor: pointer;
+      color: $orange;
+      transform: scale(1.2);
+    }
   }
   p {
     font-size: 1rem;
     text-align:center;
     color: white;
     font-style: italic;
-  }
-
-  li:hover {
-    cursor: pointer;
-    color: $orange;
   }
 
   .foot {

@@ -68,10 +68,11 @@ $bg-2: #f9f7f7;
     }
     .skill-desc {
       line-height: 1.3;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
     }
     .skill-img {
       width: 70%;
+      padding-top: 1rem;
     }
   }
 
@@ -80,7 +81,8 @@ $bg-2: #f9f7f7;
     margin: 10px;
     h3 {
       padding-top: 1rem;
-      font-size: 0.8rem;
+      font-size: 1rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -95,10 +97,6 @@ $bg-2: #f9f7f7;
     }
     .tech-skill {
       padding: 1px;
-      h3 {
-        padding-top: 0.5rem;
-        font-size: 0.8rem;
-      }
     }
     .skills-container {
       padding: 4rem 0rem 0rem 0rem;
@@ -107,7 +105,7 @@ $bg-2: #f9f7f7;
     .skill-desc {
       padding: 10px;
       line-height: 1.3;
-      font-size: 0.6rem !important;
+      font-size: 1rem !important;
     }
   }
 }

@@ -75,6 +75,20 @@ const NavList = ({refs, setShowLinks, showLinks}) => {
             className='current-tab'
           />
         </li>
+
+        <li onClick={closeNavLinks} className='nav-list-link'>
+          <a href='https://drive.google.com/uc?export=download&id=1QmfFCTRXDNGFqpLDS8E7jb1UsJ_tBXOi'>
+            Resume
+          </a>
+          <motion.div
+            transition={{ duration: 0.75 }}
+            animate={{
+              width: pathname.pathname === "/contact" ? "100%" : 0,
+            }}
+            className='current-tab'
+          />
+        </li>
+
       </ul>
     </div>
   );

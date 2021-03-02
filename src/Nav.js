@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { lineAnimation } from "./animations/animation"
-// import logo from "./img/logo.png";
+import { lineAnimation } from "./animations/animation";
+import resume from "./files/resume.pdf";
 
 const Nav = ({ refs, showLinks, setShowLinks }) => {
   const location = useLocation();
 
   const scrollSmoothHandler = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth"});
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const closeNavLinks = () => {
@@ -20,69 +20,109 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      const scrollCheck = window.scrollY > 0
+      const scrollCheck = window.scrollY > 0;
       if (scrollCheck !== scroll) {
-        setScroll(scrollCheck)
+        setScroll(scrollCheck);
       }
-
-    })
-  })
+    });
+  });
 
   const animates = (loc) => {
     if (loc === location.pathname) {
-      return "100%"
+      return "100%";
     } else {
-      return ""
+      return "";
     }
-  }
+  };
 
   return (
-    <nav id="nav" className={scroll ? "sticky" : "normal"}>
-
+    <nav id='nav' className={scroll ? "sticky" : "normal"}>
       <h3></h3>
       <ul className='nav-bar'>
-      <li className='primary nav-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.heroRef)}} to='/' activeClassName='selected' replace>
+        <li className='primary nav-link'>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.heroRef);
+            }}
+            to='/'
+            activeClassName='selected'
+            replace
+          >
             Home
           </NavLink>
-
         </li>
         <li className='nav-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.aboutRef)}} to='/about' activeClassName='selected' replace>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.aboutRef);
+            }}
+            to='/about'
+            activeClassName='selected'
+            replace
+          >
             About
           </NavLink>
-
         </li>
         <li className='nav-link'>
-        <NavLink onClick={()=>{scrollSmoothHandler(refs.skillsRef)}} to='/skills' activeClassName='selected' replace>
-          Skills
-        </NavLink>
-
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.skillsRef);
+            }}
+            to='/skills'
+            activeClassName='selected'
+            replace
+          >
+            Skills
+          </NavLink>
         </li>
         <li className='nav-link'>
-        <NavLink onClick={()=>{scrollSmoothHandler(refs.projectsRef)}} to='/projects' activeClassName='selected' replace>
-          Projects
-        </NavLink>
-
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.projectsRef);
+            }}
+            to='/projects'
+            activeClassName='selected'
+            replace
+          >
+            Projects
+          </NavLink>
         </li>
         <li className='nav-link'>
-        <NavLink onClick={()=>{scrollSmoothHandler(refs.educationRef)}} to='/education' activeClassName='selected' replace>
-          Background
-        </NavLink>
-
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.educationRef);
+            }}
+            to='/education'
+            activeClassName='selected'
+            replace
+          >
+            Background
+          </NavLink>
         </li>
         <li className='nav-link'>
-        <NavLink onClick={()=>{scrollSmoothHandler(refs.contactRef)}} to='/contact' activeClassName='selected' replace>
-          Contact
-        </NavLink>
-
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.contactRef);
+            }}
+            to='/contact'
+            activeClassName='selected'
+            replace
+          >
+            Contact
+          </NavLink>
         </li>
-          <i
-            className={`${
-              showLinks ? "fas fa-times fa-2x" : "fas fa-bars fa-2x"
-            }`}
-            onClick={closeNavLinks}
-          ></i>
+
+        <li className='nav-link'>
+          <a href='https://drive.google.com/uc?export=download&id=1QmfFCTRXDNGFqpLDS8E7jb1UsJ_tBXOi'>
+            Resume
+          </a>
+        </li>
+        <i
+          className={`${
+            showLinks ? "fas fa-times fa-2x" : "fas fa-bars fa-2x"
+          }`}
+          onClick={closeNavLinks}
+        ></i>
       </ul>
     </nav>
   );
