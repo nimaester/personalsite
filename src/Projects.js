@@ -22,7 +22,6 @@ import heroku from "./icons/heroku.png";
 import netlify from "./icons/netlify.png";
 import mongodb from "./icons/mongo.png";
 
-
 const Projects = forwardRef((props, ref) => {
   const controls = useAnimation();
   const [element, view] = useInView();
@@ -53,10 +52,7 @@ const Projects = forwardRef((props, ref) => {
             <div className='project-desc'>
               <h3 className='project-name'>Lo-Fi Player</h3>
               <p>
-                A music player app that displays track art, responsive track
-                duration bar and the common music player commands. I built this
-                app so I have something to listen to when I'm in the zone while
-                coding.
+                A music player app that displays track art, responsive track duration bar, and the common music player commands. This app is built using Javascript, React, HTML, Sass and hosted using Netlify.
               </p>
               <div className='project-links'>
                 <div className='links'>
@@ -85,9 +81,7 @@ const Projects = forwardRef((props, ref) => {
             <div className='project-desc two'>
               <h3 className='project-name'>Pokedex 2.0</h3>
               <p>
-                An app that displays information on pokemon. When I was younger
-                and before learning to code, I've always wanted to make a
-                pokedex. This is my take on it.
+                An app that displays information on pokemon. This app uses the Pokemon API, sound is hosted on S3 and built using Javascript, HTML/CSS, React, and hosted using Heroku.
               </p>
               <div className='project-links'>
                 <div className='links'>
@@ -98,12 +92,13 @@ const Projects = forwardRef((props, ref) => {
                     <button className='github-link'>Github</button>
                   </a>
                 </div>
-                <div className="tech-skills">
-                <img className='skills-icon' src={js} alt='' />
-                <img className='skills-icon' src={html} alt='' />
-                <img className='skills-icon' src={css} alt='' />
-                <img className='skills-icon' src={react} alt='' />
-                <img className='skills-icon' src={heroku} alt='' />
+                <div className='tech-skills'>
+                  <img className='skills-icon' src={js} alt='' />
+                  <img className='skills-icon' src={html} alt='' />
+                  <img className='skills-icon' src={css} alt='' />
+                  <img className='skills-icon' src={react} alt='' />
+                  <img className='skills-icon' src={aws} alt='' />
+                  <img className='skills-icon' src={heroku} alt='' />
                 </div>
               </div>
             </div>
@@ -119,9 +114,7 @@ const Projects = forwardRef((props, ref) => {
             <div className='project-desc'>
               <h3 className='project-name'>Home Rentals Reviews</h3>
               <p>
-                A component that displays ratings and reviews for a specific
-                home rental. User's images are hosted on S3 and site is running
-                on EC2 that uses Docker as a container.
+              A component that displays ratings and reviews for a specific home rental. User's information is stored in MongoDB, images are hosted on S3 and the site is running on EC2 that uses Docker as a container.
               </p>
               <div className='project-links'>
                 <div className='links'>
