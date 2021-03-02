@@ -53,7 +53,7 @@ $bg-2: #f9f7f7;
 
   button {
     font-size: 1rem;
-    margin: 3rem 2rem 0rem 0rem;
+    margin: 0rem 0.5rem 0rem 0rem;
     padding: 10px;
     border-radius: 10px;
     &:hover {
@@ -73,17 +73,25 @@ $bg-2: #f9f7f7;
   }
   .project-links {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
   }
   .tech-skills {
     display: flex;
-    img {
-      width: 20px;
-      height: 20px;
-    }
+    align-content: center;
+    align-items: center;
   }
-
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .skills-icon {
+    width: 40px;
+    margin-left: 10px;
+  }
 
 }
 
@@ -100,14 +108,15 @@ $bg-2: #f9f7f7;
       height: auto;
       margin: 0rem;
     }
+    button {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
     img {
       width: auto;
       max-width: 80%;
       height: auto;
       margin: 0rem;
-    }
-    button {
-      margin: 3rem 8px 0rem 0rem;
     }
     .project {
       flex-direction: column-reverse;
@@ -117,7 +126,21 @@ $bg-2: #f9f7f7;
     .second {
       flex-direction: column;
     }
-
+    .project-links {
+      margin-top: 1rem;
+      flex-direction: column-reverse;
+    }
+    .links{
+      justify-content: space-around;
+    }
+    .tech-skills {
+      margin-bottom: 1rem;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .skills-icon {
+      margin-left: 0rem;
+    }
   }
 }
 
@@ -129,7 +152,7 @@ $bg-2: #f9f7f7;
     padding: 2rem 1rem 0rem 1rem;
     img, .project-desc {
       width: 95%;
-      max-width: none;
+      max-width: 95%;
     }
   }
 }

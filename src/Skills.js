@@ -25,6 +25,8 @@ import rubyLogo from "./icons/ruby.png";
 import sassLogo from "./icons/sass.png";
 import gitLogo from "./icons/git.png";
 import postmanLogo from "./icons/postman.png";
+import netlifyLogo from "./icons/netlify.png";
+import herokuLogo from "./icons/heroku.png";
 
 import Skill from "./Skill";
 
@@ -126,6 +128,16 @@ const Skills = forwardRef((props, ref) => {
       "Mocha",
       mochaLogo,
       "A testing library for Node. js, created to be a simple, extensible, and fast.",
+    ],
+    [
+      "Heroku",
+      herokuLogo,
+      "Enables developers to build, run, and operate apps entirely in the cloud.",
+    ],
+    [
+      "Netlify",
+      netlifyLogo,
+      "Enables a faster path to much more performant, secure, and scalable websites and app.",
     ],
   ];
 

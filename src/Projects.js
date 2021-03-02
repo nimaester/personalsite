@@ -18,6 +18,9 @@ import aws from "./icons/aws.png";
 import css from "./icons/css.png";
 import sass from "./icons/sass.png";
 import js from "./icons/js.png";
+import heroku from "./icons/heroku.png";
+import netlify from "./icons/netlify.png";
+import mongodb from "./icons/mongo.png";
 
 
 const Projects = forwardRef((props, ref) => {
@@ -55,15 +58,26 @@ const Projects = forwardRef((props, ref) => {
                 app so I have something to listen to when I'm in the zone while
                 coding.
               </p>
-              <a href='https://ntmplayer.netlify.app/' target='_blank'>
-                <button className='site-link'>Live Site</button>
-              </a>
-              <a
-                href='https://github.com/nimaester/musicPlayer/tree/main/music-player'
-                target='_blank'
-              >
-                <button className='github-link'>Github</button>
-              </a>
+              <div className='project-links'>
+                <div className='links'>
+                  <a href='https://ntmplayer.netlify.app/' target='_blank'>
+                    <button className='site-link'>Website</button>
+                  </a>
+                  <a
+                    href='https://github.com/nimaester/musicPlayer/tree/main/music-player'
+                    target='_blank'
+                  >
+                    <button className='github-link'>Github</button>
+                  </a>
+                </div>
+                <div className='tech-skills'>
+                  <img className='skills-icon' src={js} alt='' />
+                  <img className='skills-icon' src={html} alt='' />
+                  <img className='skills-icon' src={sass} alt='' />
+                  <img className='skills-icon' src={react} alt='' />
+                  <img className='skills-icon' src={netlify} alt='' />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -75,12 +89,23 @@ const Projects = forwardRef((props, ref) => {
                 and before learning to code, I've always wanted to make a
                 pokedex. This is my take on it.
               </p>
-              <a href='https://dexpoke2.herokuapp.com/' target='_blank'>
-                <button className='site-link'>Live Site</button>
-              </a>
-              <a href='https://github.com/nimaester/mvp' target='_blank'>
-                <button className='github-link'>Github</button>
-              </a>
+              <div className='project-links'>
+                <div className='links'>
+                  <a href='https://dexpoke2.herokuapp.com/' target='_blank'>
+                    <button className='site-link'>Website</button>
+                  </a>
+                  <a href='https://github.com/nimaester/mvp' target='_blank'>
+                    <button className='github-link'>Github</button>
+                  </a>
+                </div>
+                <div className="tech-skills">
+                <img className='skills-icon' src={js} alt='' />
+                <img className='skills-icon' src={html} alt='' />
+                <img className='skills-icon' src={css} alt='' />
+                <img className='skills-icon' src={react} alt='' />
+                <img className='skills-icon' src={heroku} alt='' />
+                </div>
+              </div>
             </div>
             <div className='project-img'>
               <img src={project2} alt='' />
@@ -96,12 +121,12 @@ const Projects = forwardRef((props, ref) => {
               <p>
                 A component that displays ratings and reviews for a specific
                 home rental. User's images are hosted on S3 and site is running
-                on EC2 that uses Docker as a container .
+                on EC2 that uses Docker as a container.
               </p>
               <div className='project-links'>
                 <div className='links'>
                   <a href='http://3.101.19.195:3003/rooms/88/' target='_blank'>
-                    <button className='site-link'>Live Site</button>
+                    <button className='site-link'>Website</button>
                   </a>
                   <a
                     href='https://github.com/7LuckyAirbnboiiz/reviews-section'
@@ -110,13 +135,13 @@ const Projects = forwardRef((props, ref) => {
                     <button className='github-link'>Github</button>
                   </a>
                 </div>
-                <div className="tech-skills">
-                  <img src={js} alt="" />
-                  <img src={html} alt="" />
-                  <img src={css} alt="" />
-                  <img src={react} alt="" />
-                  <img src={aws} alt="" />
-                  <img src={docker} alt="" />
+                <div className='tech-skills'>
+                  <img className='skills-icon' src={js} alt='' />
+                  <img className='skills-icon' src={html} alt='' />
+                  <img className='skills-icon' src={css} alt='' />
+                  <img className='skills-icon' src={react} alt='' />
+                  <img className='skills-icon' src={aws} alt='' />
+                  <img className='skills-icon' src={docker} alt='' />
                 </div>
               </div>
             </div>
