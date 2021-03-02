@@ -6,9 +6,19 @@ import {
   slideUpAnimation,
 } from "./animations/animation";
 import { useInView } from "react-intersection-observer";
+// Project images
 import project1 from "./img/project1.png";
 import project2 from "./img/project2.png";
 import project3 from "./img/project3.png";
+// Project skills used
+import html from "./icons/html.png";
+import react from "./icons/react.png";
+import docker from "./icons/docker.png";
+import aws from "./icons/aws.png";
+import css from "./icons/css.png";
+import sass from "./icons/sass.png";
+import js from "./icons/js.png";
+
 
 const Projects = forwardRef((props, ref) => {
   const controls = useAnimation();
@@ -35,76 +45,86 @@ const Projects = forwardRef((props, ref) => {
         <div className='project-container'>
           <div className='project'>
             <div className='project-img'>
-              <img src={project1} alt="" />
+              <img src={project1} alt='' />
             </div>
             <div className='project-desc'>
-            <h3 className='project-name'>Lo-Fi Player</h3>
+              <h3 className='project-name'>Lo-Fi Player</h3>
               <p>
-                A music player app that displays track art, responsive track duration bar and the common music player commands. I built this app so I have something to listen to when I'm in the zone while coding.
+                A music player app that displays track art, responsive track
+                duration bar and the common music player commands. I built this
+                app so I have something to listen to when I'm in the zone while
+                coding.
               </p>
-              <a href="https://ntmplayer.netlify.app/">
-                <button className='site-link'>
-                  Live Site
-                </button>
+              <a href='https://ntmplayer.netlify.app/' target='_blank'>
+                <button className='site-link'>Live Site</button>
               </a>
-              <a href="https://github.com/nimaester/musicPlayer/tree/main/music-player">
-                <button className='github-link'>
-                  Github
-                </button>
+              <a
+                href='https://github.com/nimaester/musicPlayer/tree/main/music-player'
+                target='_blank'
+              >
+                <button className='github-link'>Github</button>
               </a>
             </div>
           </div>
 
           <div className='project second'>
-
-
             <div className='project-desc two'>
-            <h3 className='project-name'>Pokedex 2.0</h3>
+              <h3 className='project-name'>Pokedex 2.0</h3>
               <p>
-                An app that displays information on pokemon. When I was younger and before learning to code, I've always wanted to make a pokedex. This is my take on it.
+                An app that displays information on pokemon. When I was younger
+                and before learning to code, I've always wanted to make a
+                pokedex. This is my take on it.
               </p>
-              <a href="https://dexpoke2.herokuapp.com/">
-                <button className='site-link'>
-                  Live Site
-                </button>
+              <a href='https://dexpoke2.herokuapp.com/' target='_blank'>
+                <button className='site-link'>Live Site</button>
               </a>
-              <a href="https://github.com/nimaester/mvp">
-                <button className='github-link'>
-                  Github
-                </button>
+              <a href='https://github.com/nimaester/mvp' target='_blank'>
+                <button className='github-link'>Github</button>
               </a>
-
-          </div>
-          <div className='project-img'>
-              <img src={project2} alt="" />
+            </div>
+            <div className='project-img'>
+              <img src={project2} alt='' />
             </div>
           </div>
 
           <div className='project'>
             <div className='project-img'>
-              <img src={project3} alt="" />
+              <img src={project3} alt='' />
             </div>
             <div className='project-desc'>
-            <h3 className='project-name'>Home Rentals Reviews</h3>
+              <h3 className='project-name'>Home Rentals Reviews</h3>
               <p>
-                A component that displays ratings and reviews for a specific home rental. Images are on S3 and this site is hosted on EC2 and it uses Docker as its container.
+                A component that displays ratings and reviews for a specific
+                home rental. User's images are hosted on S3 and site is running
+                on EC2 that uses Docker as a container .
               </p>
-              <a href="http://3.101.19.195:3003/rooms/88/">
-                <button className='site-link'>
-                  Live Site
-                </button>
-              </a>
-              <a href="https://github.com/7LuckyAirbnboiiz/reviews-section">
-                <button className='github-link'>
-                  Github
-                </button>
-              </a>
+              <div className='project-links'>
+                <div className='links'>
+                  <a href='http://3.101.19.195:3003/rooms/88/' target='_blank'>
+                    <button className='site-link'>Live Site</button>
+                  </a>
+                  <a
+                    href='https://github.com/7LuckyAirbnboiiz/reviews-section'
+                    target='_blank'
+                  >
+                    <button className='github-link'>Github</button>
+                  </a>
+                </div>
+                <div className="tech-skills">
+                  <img src={js} alt="" />
+                  <img src={html} alt="" />
+                  <img src={css} alt="" />
+                  <img src={react} alt="" />
+                  <img src={aws} alt="" />
+                  <img src={docker} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </motion.section>
       <p className='quotes'>“Build what you want to see in the world”</p>
-        <p className='quotee'>-- Jack Dorsey</p>
+      <p className='quotee'>-- Jack Dorsey</p>
     </div>
   );
 });

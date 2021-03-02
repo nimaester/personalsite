@@ -5,22 +5,22 @@ const Footer = () => {
     <div className='footer'>
       <ul>
         <li className="first">
-          <a href="https://www.linkedin.com/in/nimtayo/">
+          <a href="https://www.linkedin.com/in/nimtayo/" target="_blank">
           <i className='fab fa-linkedin fa-2x'></i>
           </a>
         </li>
         <li>
-        <a href="https://www.facebook.com/nim.tayo.12">
+        <a href="https://www.facebook.com/nim.tayo.12" target="_blank">
           <i className='fab fa-facebook-square fa-2x'></i>
           </a>
         </li>
         <li>
-        <a href="https://github.com/nimaester">
+        <a href="https://github.com/nimaester" target="_blank">
           <i className='fab fa-github-square fa-2x'></i>
           </a>
         </li>
         <li>
-        <a href="https://twitter.com/nim_tayo">
+        <a href="https://twitter.com/nim_tayo" target="_blank">
           <i className='fab fa-twitter-square fa-2x'></i>
           </a>
         </li>

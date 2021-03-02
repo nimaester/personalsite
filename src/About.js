@@ -53,10 +53,10 @@ const AboutMe = forwardRef((props, ref) => {
         </div>
         <p className='invite'>Let's connect! Can't wait to hear from you.</p>
         <div className='links'>
-          <a href='https://www.facebook.com/nim.tayo.12'>
+          <a href='https://www.facebook.com/nim.tayo.12' target="_blank">
             <img className='primary-icon' src={fbLogo} alt='' />
           </a>
-          <a href='https://www.linkedin.com/in/nimtayo/'>
+          <a href='https://www.linkedin.com/in/nimtayo/' target="_blank">
             <img src={linkLogo} alt='' />
           </a>
         </div>
