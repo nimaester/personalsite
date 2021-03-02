@@ -1,4 +1,5 @@
 import React from "react";
+import Entry from "./Entry";
 
 const ExperienceEntry = ({ data }) => {
   return (
@@ -9,7 +10,9 @@ const ExperienceEntry = ({ data }) => {
           <h3 className='year'>{data[1]}</h3>
         </div>
         <div className='exp-desc'>
-          <p>{data[2]}</p>
+          {data[2].map((desc, i) => (
+            <Entry key={i} desc={desc} />
+          ))}
         </div>
       </div>
     </div>

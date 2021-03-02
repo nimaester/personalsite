@@ -28,13 +28,17 @@ $bg-2: #f9f7f7;
     list-style: none;
     letter-spacing: 3px;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      cursor: pointer;
     }
   }
   a {
     text-align: left;
     color: white;
     text-decoration: none;
+    &:hover {
+      color: $orange;
+    }
   }
   .current-tab {
     width: 0;

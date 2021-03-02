@@ -59,6 +59,7 @@ $bg-2: #f9f7f7;
     &:hover {
       background-color: $orange;
       cursor: pointer;
+      transform: scale(1.1);
     }
     &:focus {
       outline: none;

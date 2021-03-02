@@ -1,5 +1,11 @@
-.about-me {
+$orange: #ef8d32;
+$d-blue: #112d4e;
+$l-blue: #3f72af;
+$bg-1: #dbe2ef;
+$bg-2: #f9f7f7;
 
+
+.about-me {
   padding: 4rem 4rem 0rem 4rem;
   background-color: $bg-2;
   h2,
@@ -11,7 +17,7 @@
   }
   h2 {
     font-size: 3.5rem;
-    color: $d-blue;
+    color: $l-blue;
     margin-top: 2rem;
     text-align: center;
   }
