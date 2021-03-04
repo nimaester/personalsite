@@ -3,7 +3,6 @@ import { HashRouter, NavLink, useLocation } from "react-router-dom";
 import "./styles/app.scss";
 import { useInView } from "react-intersection-observer";
 
-
 import Nav from "./Nav";
 import NavList from "./NavList";
 import Hero from "./Hero";
@@ -25,7 +24,7 @@ function App() {
   const contactRef = useRef(null);
 
   const [showLinks, setShowLinks] = useState(false);
-  const [back1, setback1] = useState(null)
+  const [back1, setback1] = useState(null);
 
   return (
     <div className='App'>
@@ -55,12 +54,12 @@ function App() {
           }}
         />
         <AnimatePresence>
-        <Hero key='hero' ref={heroRef}/>
-        <About key='about' ref={aboutRef} />
-        <Skills key='skills' ref={skillsRef} />
-        <Projects key='projects' ref={projectsRef} />
-        <Experience key='education ' ref={educationRef} />
-        <Contact key='contact' ref={contactRef} />
+          <Hero key='hero' ref={heroRef} />
+          <About key='about' ref={aboutRef} />
+          <Skills key='skills' ref={skillsRef} />
+          <Projects key='projects' ref={projectsRef} />
+          <Experience key='education ' ref={educationRef} />
+          <Contact key='contact' ref={contactRef} />
         </AnimatePresence>
         <Footer />
       </HashRouter>
@@ -69,5 +68,3 @@ function App() {
 }
 
 export default App;
-
-

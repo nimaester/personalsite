@@ -12,10 +12,7 @@ $bg-2: #f9f7f7;
   align-items: center;
   color: rgb(197, 197, 197);
   justify-content: center;
-  background: linear-gradient(
-    #3f71afab,
-    #112d4eaf
-  ),
+  background: linear-gradient(#3f71afab, #112d4eaf),
     url(../img//wallpaper.jpg) center no-repeat;
   background-size: cover;
 
@@ -52,7 +49,6 @@ $bg-2: #f9f7f7;
   }
 }
 
-
 @media screen and (max-width: 865px) {
   .hero {
     flex-direction: column;
@@ -78,7 +74,6 @@ $bg-2: #f9f7f7;
       width: 100%;
     }
     .description {
-
       h2 {
         font-size: 2rem;
       }

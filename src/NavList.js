@@ -1,42 +1,95 @@
-import React from 'react';
+import React from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const NavList = ({refs, setShowLinks, showLinks}) => {
-
+const NavList = ({ refs, setShowLinks, showLinks }) => {
   const closeNavLinks = () => {
     setShowLinks(false);
-  }
+  };
 
   const scrollSmoothHandler = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth"});
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className={`nav-list ${showLinks ? "active": ""}`}>
+    <div className={`nav-list ${showLinks ? "active" : ""}`}>
       <ul>
         <li onClick={closeNavLinks} className='primary nav-list-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.heroRef)}} to='/' activeClassName='selected' replace>Home</NavLink>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.heroRef);
+            }}
+            to='/'
+            activeClassName='selected'
+            replace
+          >
+            Home
+          </NavLink>
         </li>
 
         <li onClick={closeNavLinks} className='nav-list-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.aboutRef)}} to='/about' activeClassName='selected' replace>About</NavLink>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.aboutRef);
+            }}
+            to='/about'
+            activeClassName='selected'
+            replace
+          >
+            About
+          </NavLink>
         </li>
 
         <li onClick={closeNavLinks} className='nav-list-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.skillsRef)}} to='/skills' activeClassName='selected' replace>Skills</NavLink>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.skillsRef);
+            }}
+            to='/skills'
+            activeClassName='selected'
+            replace
+          >
+            Skills
+          </NavLink>
         </li>
 
         <li onClick={closeNavLinks} className='nav-list-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.projectsRef)}} to='/projects' activeClassName='selected' replace>Projects</NavLink>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.projectsRef);
+            }}
+            to='/projects'
+            activeClassName='selected'
+            replace
+          >
+            Projects
+          </NavLink>
         </li>
 
         <li onClick={closeNavLinks} className='nav-list-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.educationRef)}} to='/education' activeClassName='selected' replace>Background</NavLink>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.educationRef);
+            }}
+            to='/education'
+            activeClassName='selected'
+            replace
+          >
+            Background
+          </NavLink>
         </li>
 
         <li onClick={closeNavLinks} className='nav-list-link'>
-          <NavLink onClick={()=>{scrollSmoothHandler(refs.contactRef)}} to='/contact' activeClassName='selected' replace>Contact</NavLink>
+          <NavLink
+            onClick={() => {
+              scrollSmoothHandler(refs.contactRef);
+            }}
+            to='/contact'
+            activeClassName='selected'
+            replace
+          >
+            Contact
+          </NavLink>
         </li>
 
         <li onClick={closeNavLinks} className='nav-list-link'>
@@ -44,7 +97,6 @@ const NavList = ({refs, setShowLinks, showLinks}) => {
             Resume
           </a>
         </li>
-
       </ul>
     </div>
   );

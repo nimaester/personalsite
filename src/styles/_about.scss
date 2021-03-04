@@ -4,7 +4,6 @@ $l-blue: #3f72af;
 $bg-1: #dbe2ef;
 $bg-2: #f9f7f7;
 
-
 .about-me {
   padding: 4rem 4rem 0rem 4rem;
   background-color: $bg-2;
@@ -12,7 +11,6 @@ $bg-2: #f9f7f7;
   h3,
   h4,
   h5 {
-
     font-weight: lighter;
   }
   h2 {
@@ -83,9 +81,6 @@ $bg-2: #f9f7f7;
   }
 }
 
-
-
-
 @media screen and (max-width: 865px) {
   .about-me {
     padding: 4rem 2rem 0rem 2rem;
@@ -135,10 +130,8 @@ $bg-2: #f9f7f7;
         margin-bottom: 1rem;
       }
       .my-pic {
-
         min-width: 90%;
         max-width: 90%;
-
       }
       .full-bio {
         line-height: 1rem;

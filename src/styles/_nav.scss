@@ -22,7 +22,7 @@ nav {
     align-items: center;
     justify-content: center;
   }
-  .nav-link{
+  .nav-link {
     padding-left: 2rem;
     position: relative;
   }
@@ -34,7 +34,9 @@ nav {
     letter-spacing: 2px;
   }
 
-  li:hover, .fas:hover, a:hover {
+  li:hover,
+  .fas:hover,
+  a:hover {
     cursor: pointer;
     color: $orange;
     transform: scale(1.1);
@@ -43,7 +45,7 @@ nav {
     margin-left: -3rem;
   }
 
-  .fa-bars{
+  .fa-bars {
     color: white;
     display: none;
     z-index: 1000;
@@ -59,9 +61,8 @@ nav {
 }
 
 .sticky {
-    background-color: $d-blue;
+  background-color: $d-blue;
 }
-
 
 @media screen and (max-width: 865px) {
   nav {
@@ -77,5 +78,4 @@ nav {
       font-size: 1.7rem;
     }
   }
-
 }

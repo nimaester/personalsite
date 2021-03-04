@@ -27,7 +27,7 @@ $bg-2: #f9f7f7;
   }
   p {
     font-size: 1rem;
-    text-align:center;
+    text-align: center;
     color: white;
     font-style: italic;
   }
@@ -46,7 +46,8 @@ $bg-2: #f9f7f7;
   .footer {
     flex-direction: column;
     padding: 2rem 0rem 0rem 0rem;
-    ul, .foot {
+    ul,
+    .foot {
       justify-content: center;
     }
     .first {

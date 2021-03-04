@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Entry = ({desc}) => {
-  return (
-    <p>{desc}</p>
-  );
+const Entry = ({ desc }) => {
+  return <p>{desc}</p>;
 };
 
 export default Entry;

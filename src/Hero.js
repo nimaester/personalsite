@@ -4,7 +4,7 @@ import {
   slideLeftAnimation,
   fadeAnimation,
   primaryFadeAnimation,
-  thirdFadeAnimation
+  thirdFadeAnimation,
 } from "./animations/animation";
 import { useInView } from "react-intersection-observer";
 
@@ -19,13 +19,13 @@ const Hero = forwardRef((props, ref) => {
   }
 
   const handleClick = () => {
-    document.getElementById('contact').scrollIntoView({ behavior: "smooth"});
-  }
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div ref={ref}>
       <motion.section
-        id="hero"
+        id='hero'
         ref={element}
         className='hero'
         variants={primaryFadeAnimation}
@@ -54,8 +54,10 @@ const Hero = forwardRef((props, ref) => {
               Contact Me
             </motion.button>
           </motion.div>
-          <p className='quotes quote-hero'>“Whatever good things we build end up building us.”</p>
-        <p className='quotee quote-hero'>-- Jim Rohn</p>
+          <p className='quotes quote-hero'>
+            “Whatever good things we build end up building us.”
+          </p>
+          <p className='quotee quote-hero'>-- Jim Rohn</p>
         </div>
       </motion.section>
     </div>

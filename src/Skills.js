@@ -59,8 +59,7 @@ const Skills = forwardRef((props, ref) => {
     [
       "Sass",
       sassLogo,
-      "A preprocessor scripting language that is interpreted or compiled into CSS"
-
+      "A preprocessor scripting language that is interpreted or compiled into CSS",
     ],
     [
       "React",
@@ -70,13 +69,12 @@ const Skills = forwardRef((props, ref) => {
     [
       "Git",
       gitLogo,
-      "Software for tracking changes in any set of files, usually used for coordinating work among programmers "
-
+      "Software for tracking changes in any set of files, usually used for coordinating work among programmers ",
     ],
     [
       "Postman",
       postmanLogo,
-      "Postman is a collaboration platform for API development. It simplifies each step of building an API"
+      "Postman is a collaboration platform for API development. It simplifies each step of building an API",
     ],
     [
       "Ruby",

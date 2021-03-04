@@ -52,7 +52,10 @@ const Projects = forwardRef((props, ref) => {
             <div className='project-desc'>
               <h3 className='project-name'>Lo-Fi Player</h3>
               <p>
-                A music player app that displays track art, responsive track duration bar, and the common music player commands. This app is built using Javascript, React, HTML, Sass and hosted using Netlify.
+                A music player app that displays track art, responsive track
+                duration bar, and the common music player commands. This app is
+                built using Javascript, React, HTML, Sass and hosted using
+                Netlify.
               </p>
               <div className='project-links'>
                 <div className='links'>
@@ -81,7 +84,9 @@ const Projects = forwardRef((props, ref) => {
             <div className='project-desc two'>
               <h3 className='project-name'>Pokedex 2.0</h3>
               <p>
-                An app that displays information on pokemon. This app uses the Pokemon API, sound is hosted on S3 and built using Javascript, HTML/CSS, React, and hosted using Heroku.
+                An app that displays information on pokemon. This app uses the
+                Pokemon API, sound is hosted on S3 and built using Javascript,
+                HTML/CSS, React, and hosted using Heroku.
               </p>
               <div className='project-links'>
                 <div className='links'>
@@ -114,7 +119,10 @@ const Projects = forwardRef((props, ref) => {
             <div className='project-desc'>
               <h3 className='project-name'>Home Rentals Reviews</h3>
               <p>
-              A component that displays ratings and reviews for a specific home rental. User's information is stored in MongoDB, images are hosted on S3 and the site is running on EC2 that uses Docker as a container.
+                A component that displays ratings and reviews for a specific
+                home rental. User's information is stored in MongoDB, images are
+                hosted on S3 and the site is running on EC2 that uses Docker as
+                a container.
               </p>
               <div className='project-links'>
                 <div className='links'>

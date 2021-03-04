@@ -1,6 +1,10 @@
 import React, { forwardRef } from "react";
 import emailjs from "emailjs-com";
-import { fadeAnimation, primaryFadeAnimation, slideRightAnimation } from "./animations/animation";
+import {
+  fadeAnimation,
+  primaryFadeAnimation,
+  slideRightAnimation,
+} from "./animations/animation";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ScrollTop from "./animations/scrollTop";
@@ -41,56 +45,55 @@ const Contact = forwardRef((props, ref) => {
 
   return (
     <div ref={ref}>
-    <motion.section
-      ref={element}
-      className='contact'
-      variants={primaryFadeAnimation}
-      initial='hidden'
-      animate={controls}
-      exit='exit'
-      id="contact"
-    >
+      <motion.section
+        ref={element}
+        className='contact'
+        variants={primaryFadeAnimation}
+        initial='hidden'
+        animate={controls}
+        exit='exit'
+        id='contact'
+      >
+        <form className='contact-form' onSubmit={sendEmail}>
+          <div className='name'>
+            <motion.h2 variants={slideRightAnimation}>Contact Me</motion.h2>
+            <input
+              className='input-name'
+              spellCheck='false'
+              placeholder='Your Name'
+              type='text'
+              name='name'
+              required
+            />
+          </div>
 
-      <form className='contact-form' onSubmit={sendEmail}>
-        <div className='name'>
-        <motion.h2 variants={slideRightAnimation} >Contact Me</motion.h2>
-          <input
-            className='input-name'
-            spellCheck='false'
-            placeholder='Your Name'
-            type='text'
-            name='name'
-            required
-          />
-        </div>
+          <div className='email'>
+            <input
+              className='input-email'
+              spellCheck='false'
+              placeholder='Your Email'
+              type='email'
+              name='email'
+              required
+            />
+          </div>
 
-        <div className='email'>
-          <input
-            className='input-email'
-            spellCheck='false'
-            placeholder='Your Email'
-            type='email'
-            name='email'
-            required
-          />
-        </div>
+          <div className='message'>
+            <textarea
+              className='input-message'
+              spellCheck='false'
+              placeholder='Your Message'
+              name='message'
+              required
+            />
+          </div>
+          <div>
+            <input className='send' type='submit' value='Send' />
+          </div>
+        </form>
 
-        <div className='message'>
-          <textarea
-            className='input-message'
-            spellCheck='false'
-            placeholder='Your Message'
-            name='message'
-            required
-          />
-        </div>
-        <div>
-          <input className='send' type='submit' value='Send' />
-        </div>
-      </form>
-
-      <p className='quotes'>“You expecting a quote here?”</p>
-    </motion.section>
+        <p className='quotes'>“You expecting a quote here?”</p>
+      </motion.section>
     </div>
   );
 });
