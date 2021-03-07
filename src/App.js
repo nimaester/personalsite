@@ -16,13 +16,6 @@ import Footer from "./Footer";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const heroRef = useRef(null);
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const projectsRef = useRef(null);
-  const educationRef = useRef(null);
-  const contactRef = useRef(null);
-
   const [showLinks, setShowLinks] = useState(false);
   const [back1, setback1] = useState(null);
 
