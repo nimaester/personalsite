@@ -1,7 +1,8 @@
 # My Portfolio Website
 
 This project was built to showcase my skills and projects that I have created in the past.<br>
-This website is built using Javascript, HTML, SASS, React that is hosted on Netlify.  
+This website is built using Javascript, HTML, SASS, React. <br>
+The animations were made using Framer-Motion and the site is hosted on Netlify.
 
 The site is live at https://nimpersonalsite.netlify.app/#/
 
