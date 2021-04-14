@@ -126,8 +126,11 @@ const Projects = forwardRef((props, ref) => {
               </p>
               <div className='project-links'>
                 <div className='links'>
-                  <a href='http://3.101.19.195:3003/rooms/88/' target='_blank'>
-                    <button className='site-link'>Website</button>
+                  <a
+                    href='https://www.youtube.com/watch?v=GXMldvDJAKQ'
+                    target='_blank'
+                  >
+                    <button className='site-link'>Demo</button>
                   </a>
                   <a
                     href='https://github.com/7LuckyAirbnboiiz/reviews-section'
