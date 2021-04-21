@@ -27,6 +27,7 @@ import gitLogo from "./icons/git.png";
 import postmanLogo from "./icons/postman.png";
 import netlifyLogo from "./icons/netlify.png";
 import herokuLogo from "./icons/heroku.png";
+import reduxLogo from "./icons/react.png";
 
 import Skill from "./Skill";
 
@@ -65,6 +66,11 @@ const Skills = forwardRef((props, ref) => {
       "React",
       reactLogo,
       "Allows developers to create large web applications that can change data, without reloading the page",
+    ],
+    [
+      "Redux",
+      reduxLogo,
+      "An open-source JavaScript library for managing application state that is commonly used with React",
     ],
     [
       "Git",
