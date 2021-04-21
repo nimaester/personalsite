@@ -51,6 +51,15 @@ nav {
     z-index: 1000;
   }
 
+  .name {
+    color: white;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    left: 2rem;
+    font-size: 1.4rem;
+  }
+
   .fa-times {
     color: white;
   }
@@ -72,6 +81,9 @@ nav {
       display: none;
     }
     .fa-bars {
+      display: block;
+    }
+    .name {
       display: block;
     }
     .fas {

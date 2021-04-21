@@ -38,6 +38,9 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
     <nav id='nav' className={scroll ? "sticky" : "normal"}>
       <h3></h3>
       <ul className='nav-bar'>
+        <li className='name'>
+          <i>Nim Tayo</i>
+        </li>
         <li className='primary nav-link'>
           <NavLink
             onClick={() => {
