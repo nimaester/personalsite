@@ -27,7 +27,7 @@ import gitLogo from "./icons/git.png";
 import postmanLogo from "./icons/postman.png";
 import netlifyLogo from "./icons/netlify.png";
 import herokuLogo from "./icons/heroku.png";
-import reduxLogo from "./icons/react.png";
+import reduxLogo from "./icons/redux.png";
 
 import Skill from "./Skill";
 
