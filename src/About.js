@@ -22,7 +22,8 @@ const AboutMe = forwardRef((props, ref) => {
   }
 
   return (
-    <section ref={ref}>
+    <section>
+      <div className='section' ref={ref}></div>
       <motion.div
         ref={element}
         className='about-me'

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Entry = ({ desc }) => {
-  return <p>{desc}</p>;
+  return <p className='entry'>{desc}</p>;
 };
 
 export default Entry;
