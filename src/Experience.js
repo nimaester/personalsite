@@ -18,7 +18,7 @@ const Experience = forwardRef((props, ref) => {
       "Hack Reactor",
       "(2020-2020)",
       [
-        "An immersive coding school thats has a ~3% acceptance rate that provides software engineering education, career placement services, and a network of professional peers. After 1000+ hours of curriculum, students graduate as full-stack software engineers and JavaScript programmers",
+        "An immersive coding school that has a ~3% acceptance rate that provides software engineering education, career placement services, and a network of professional peers. After 1000+ hours of curriculum, students graduate as full-stack software engineers and JavaScript programmers",
       ],
     ],
     [
@@ -49,9 +49,9 @@ const Experience = forwardRef((props, ref) => {
       "Personal Projects, Software Engineer",
       "(2020-Current)",
       [
-        "- Designed an interactive UX/UI using React and Redux to display ratings and reviews for homes and maximizing code reusability",
+        "- Designed an interactive UX/UI using React and Redux to display ratings and reviews for rental homes and maximizing code reusability",
         "- Built and deployed Docker containers to EC2 by configuring monolithic apps into microservices for improved developer workflow",
-        "- Built a home rentals reviews component that displays a user’s rating and review for a specific rental house using React.js, MongoDB Express.js and Node.js",
+        "- Built a home rentals reviews component that displays a user’s rating and reviews for a specific rental house using React.js, MongoDB Express.js and Node.js",
         "- Managed and optimized the backend for a home rentals image gallery component from 200RPS to over 1000RPS+ by horizontally scaling and using a load balancer to achieve faster querying times",
       ],
     ],
