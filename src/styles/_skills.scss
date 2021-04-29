@@ -35,8 +35,8 @@ $bg-2: #f9f7f7;
 
   .skill-desc {
     text-align: left;
-    font-size: 0.8rem;
-    line-height: 1.5;
+    font-size: 0.9rem !important;
+    line-height: 1.4;
     padding: 0.8rem;
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@ $bg-2: #f9f7f7;
 
 @media screen and (max-width: 865px) {
   .skills {
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 0rem 2rem 4rem 2rem;
     h2 {
       font-size: 2.5rem;
     }
@@ -70,7 +70,7 @@ $bg-2: #f9f7f7;
     }
     .skill-desc {
       line-height: 1.2;
-      font-size: 0.9rem;
+      font-size: 0.9rem !important;
       padding: 10px;
     }
     .skill-img {
@@ -93,7 +93,7 @@ $bg-2: #f9f7f7;
 
 @media screen and (max-width: 420px) {
   .skills {
-    padding: 1rem 0em 0rem 0rem;
+    padding: 1rem 0em 4rem 0rem;
     margin-top: 1rem;
     h2 {
       font-size: 2rem;

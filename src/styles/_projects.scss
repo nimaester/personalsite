@@ -6,7 +6,7 @@ $bg-2: #f9f7f7;
 
 .projects {
   text-align: center;
-  padding: 4rem 1rem 0rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   background-color: $bg-2;
   h2,
   h3,
@@ -17,7 +17,6 @@ $bg-2: #f9f7f7;
   h2 {
     font-size: 3.5rem;
     color: $l-blue;
-    margin-top: 2rem;
   }
   p {
     line-height: 1.5;
@@ -147,7 +146,7 @@ $bg-2: #f9f7f7;
     h2 {
       font-size: 2rem;
     }
-    padding: 2rem 1rem 0rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
     img,
     .project-desc {
       width: 95%;

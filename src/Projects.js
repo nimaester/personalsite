@@ -34,8 +34,8 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <div ref={element}>
+      <div className='section' ref={ref}></div>
       <motion.section
-        ref={ref}
         className='projects'
         variants={primaryFadeAnimation}
         initial='hidden'
