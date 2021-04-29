@@ -35,7 +35,7 @@ body {
 }
 
 .section {
-  height: 4.5rem;
+  height: 6.5rem;
 }
 
 @media screen and (max-width: 865px) {
@@ -43,6 +43,9 @@ body {
   .quotee {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .section {
+    height: 4.5rem;
   }
 }
 

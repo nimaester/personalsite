@@ -146,10 +146,10 @@ const Skills = forwardRef((props, ref) => {
   ];
 
   return (
-    <div ref={ref}>
+    <section className='skills'>
+      <div className='section' ref={ref}></div>
       <motion.section
         ref={element}
-        className='skills'
         variants={primaryFadeAnimation}
         initial='hidden'
         animate={controls}
@@ -168,7 +168,7 @@ const Skills = forwardRef((props, ref) => {
         </p>
         <p className='quotee'>-- Steve Jobs</p>
       </motion.section>
-    </div>
+    </section>
   );
 });
 

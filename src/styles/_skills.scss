@@ -5,14 +5,13 @@ $bg-1: #dbe2ef;
 $bg-2: #f9f7f7;
 
 .skills {
-  padding: 2.5rem 4rem 0rem 4rem;
+  padding: 0rem 4rem 0rem 4rem;
   text-align: center;
   background-color: $bg-1;
 
   h2 {
     font-weight: lighter;
     font-size: 3.5rem;
-    margin-top: 3rem;
     color: $l-blue;
   }
   .skills-container {
@@ -59,7 +58,7 @@ $bg-2: #f9f7f7;
 
 @media screen and (max-width: 865px) {
   .skills {
-    padding: 2.5rem 1rem 0rem 1rem;
+    padding: 0rem 2rem 0rem 2rem;
     h2 {
       font-size: 2.5rem;
     }
@@ -94,13 +93,14 @@ $bg-2: #f9f7f7;
 
 @media screen and (max-width: 420px) {
   .skills {
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 0em 0rem 0rem;
     margin-top: 1rem;
     h2 {
       font-size: 2rem;
     }
     .tech-skill {
       padding: 1px;
+      width: 8rem;
     }
     .skills-container {
       padding: 4rem 0rem 0rem 0rem;
