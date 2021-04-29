@@ -44,7 +44,8 @@ const Contact = forwardRef((props, ref) => {
   }
 
   return (
-    <div ref={ref}>
+    <div>
+      <div className='section' ref={ref}></div>
       <motion.section
         ref={element}
         className='contact'
