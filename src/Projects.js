@@ -151,9 +151,9 @@ const Projects = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
+        <p className='quotes'>“Build what you want to see in the world”</p>
+        <p className='quotee'>-- Jack Dorsey</p>
       </motion.section>
-      <p className='quotes'>“Build what you want to see in the world”</p>
-      <p className='quotee'>-- Jack Dorsey</p>
     </div>
   );
 });

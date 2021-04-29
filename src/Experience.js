@@ -70,12 +70,12 @@ const Experience = forwardRef((props, ref) => {
     <div ref={element}>
       <motion.section
         className='experience'
-        ref={ref}
         variants={primaryFadeAnimation}
         initial='hidden'
         animate={controls}
         exit='exit'
       >
+        <div className='section' ref={ref}></div>
         <motion.h2 variants={slideLeftAnimation}>Education</motion.h2>
 
         {schoolData.map((data) => (
