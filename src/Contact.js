@@ -45,7 +45,7 @@ const Contact = forwardRef((props, ref) => {
 
   return (
     <div>
-      <div className='section' ref={ref}></div>
+      <div id='contact' className='section' ref={ref}></div>
       <motion.section
         ref={element}
         className='contact'
@@ -53,7 +53,6 @@ const Contact = forwardRef((props, ref) => {
         initial='hidden'
         animate={controls}
         exit='exit'
-        id='contact'
       >
         <form className='contact-form' onSubmit={sendEmail}>
           <div className='name'>
