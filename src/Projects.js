@@ -178,7 +178,7 @@ const Projects = forwardRef((props, ref) => {
                   <img className='skills-icon' src={html} alt='' />
                   <img className='skills-icon' src={css} alt='' />
                   <img className='skills-icon' src={aws} alt='' />
-                  <img className='skills-icon' src={heroku} alt='' />
+                  <img className='skills-icon' src={netlify} alt='' />
                 </div>
               </div>
             </div>
