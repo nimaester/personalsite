@@ -10,6 +10,7 @@ import { useInView } from "react-intersection-observer";
 import project1 from "./img/project1.png";
 import project2 from "./img/project2.png";
 import project3 from "./img/project3.png";
+import project4 from "./img/project4.png";
 // Project skills used
 import html from "./icons/html.png";
 import react from "./icons/react.png";
@@ -148,6 +149,41 @@ const Projects = forwardRef((props, ref) => {
                   <img className='skills-icon' src={docker} alt='' />
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className='project second'>
+            <div className='project-desc two'>
+              <h3 className='project-name'>Nario</h3>
+              <p>
+                My take of the game Super Mario Bros from old console games.
+                Still a work in progress but I am currently adding more levels
+                and features. This application uses AWS to store files and
+                music. Built using kaboom.js and deployed in Netlify
+              </p>
+              <div className='project-links'>
+                <div className='links'>
+                  <a href='https://ntmario.netlify.app/' target='_blank'>
+                    <button className='site-link'>Website</button>
+                  </a>
+                  <a
+                    href='https://github.com/nimaester/kaboom/tree/main/mario'
+                    target='_blank'
+                  >
+                    <button className='github-link'>Github</button>
+                  </a>
+                </div>
+                <div className='tech-skills'>
+                  <img className='skills-icon' src={js} alt='' />
+                  <img className='skills-icon' src={html} alt='' />
+                  <img className='skills-icon' src={css} alt='' />
+                  <img className='skills-icon' src={aws} alt='' />
+                  <img className='skills-icon' src={heroku} alt='' />
+                </div>
+              </div>
+            </div>
+            <div className='project-img'>
+              <img src={project4} alt='' />
             </div>
           </div>
         </div>

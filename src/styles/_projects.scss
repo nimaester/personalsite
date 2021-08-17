@@ -34,7 +34,9 @@ $bg-2: #f9f7f7;
   }
   img {
     width: 15.5rem;
+    height: 100%;
     border-radius: 10px;
+    object-fit: cover;
   }
   .project-desc {
     text-align: left;
