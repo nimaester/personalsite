@@ -32,15 +32,11 @@ $bg-2: #f9f7f7;
     max-width: 870px;
     margin-top: 3rem;
   }
-  video {
+  img {
     width: 15.5rem;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-    &:hover {
-      transform: scale(1.1);
-      cursor: pointer;
-    }
   }
   .project-desc {
     text-align: left;
@@ -49,8 +45,6 @@ $bg-2: #f9f7f7;
     background-color: rgb(236, 236, 236);
     border-radius: 10px;
   }
-
-  
 
   .two {
     margin-left: 0rem;
@@ -119,7 +113,7 @@ $bg-2: #f9f7f7;
       margin-left: 1rem;
       margin-right: 1rem;
     }
-    video {
+    img {
       width: auto;
       max-width: 80%;
       height: auto;

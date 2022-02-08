@@ -5,7 +5,11 @@ import {
   slideRightAnimation,
 } from "./animations/animation";
 import { useInView } from "react-intersection-observer";
-
+// Project images
+import project1 from "./img/project1.png";
+import project2 from "./img/project2.png";
+import project3 from "./img/project3.png";
+import project4 from "./img/project4.png";
 // Project skills used
 import html from "./icons/html.png";
 import react from "./icons/react.png";
@@ -27,14 +31,6 @@ const Projects = forwardRef((props, ref) => {
     controls.start("hidden");
   }
 
-  const playMovie = (e) => {
-    e.target.play();
-  };
-
-  const stopMovie = (e) => {
-    e.target.pause();
-  };
-
   return (
     <div ref={element}>
       <div className='section' ref={ref}></div>
@@ -49,19 +45,8 @@ const Projects = forwardRef((props, ref) => {
 
         <div className='project-container'>
           <div className='project'>
-            <div>
-              <video
-                preload
-                muted
-                loop
-                onMouseOver={playMovie}
-                onMouseOut={stopMovie}
-              >
-                <source
-                  src={`https://i.gyazo.com/bf5fe7f716dc6e04b65cd3be79efc563.mp4`}
-                  type='video/mp4'
-                />
-              </video>
+            <div className='project-img'>
+              <img src={project1} alt='' />
             </div>
             <div className='project-desc'>
               <h3 className='project-name'>Lo-Fi Player</h3>
@@ -135,35 +120,13 @@ const Projects = forwardRef((props, ref) => {
               </div>
             </div>
             <div className='project-img'>
-              <video
-                preload
-                muted
-                loop
-                onMouseOver={playMovie}
-                onMouseOut={stopMovie}
-              >
-                <source
-                  src={`https://i.gyazo.com/d0a6cf54a4aff227d8ac7e5823cd7ee1.mp4`}
-                  type='video/mp4'
-                />
-              </video>
+              <img src={project2} alt='' />
             </div>
           </div>
 
           <div className='project'>
             <div className='project-img'>
-              <video
-                preload
-                muted
-                loop
-                onMouseOver={playMovie}
-                onMouseOut={stopMovie}
-              >
-                <source
-                  src={`https://i.gyazo.com/83b83fbdfb49a2ad55b85b0ff7c7dbbf.mp4`}
-                  type='video/mp4'
-                />
-              </video>
+              <img src={project3} alt='' />
             </div>
             <div className='project-desc'>
               <h3 className='project-name'>Home Rentals Reviews</h3>
@@ -238,18 +201,7 @@ const Projects = forwardRef((props, ref) => {
               </div>
             </div>
             <div className='project-img'>
-              <video
-                preload
-                muted
-                loop
-                onMouseOver={playMovie}
-                onMouseOut={stopMovie}
-              >
-                <source
-                  src={`https://i.gyazo.com/db3616ec804b2f7545c423c5c3faaaab.mp4`}
-                  type='video/mp4'
-                />
-              </video>
+              <img src={project4} alt='' />
             </div>
           </div>
         </div>
