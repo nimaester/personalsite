@@ -115,7 +115,7 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
         </li>
 
         <li className='nav-link'>
-          <a href='https://drive.google.com/uc?export=download&id=1g3yxkGZLQSeSRjVEsUhQjPzj32J5bMJDhLVydXZHJxU'>
+          <a href='https://drive.google.com/uc?export=download&id=1nqBlLxrKG5GPNl0f1cB8nq2LAkjdRm6z'>
             Resume
           </a>
         </li>
