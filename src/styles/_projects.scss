@@ -103,16 +103,15 @@ $bg-2: #f9f7f7;
 
 @media screen and (max-width: 865px) {
   .projects {
-    padding: 0rem 1rem 4rem 1rem;
-
     h2 {
       font-size: 2.5rem;
       padding-bottom: 0rem;
     }
     .project-desc {
       width: auto;
-      max-width: 80%;
+      max-width: 90%;
       height: auto;
+      padding: 2rem 1rem;
       margin: 0rem;
       border-radius: 10px 10px 0px 0px;
     }
@@ -122,7 +121,7 @@ $bg-2: #f9f7f7;
     }
     .project-img {
       width: auto;
-      max-width: 80%;
+      max-width: 90%;
       height: auto;
       margin: 0rem;
       border-radius: 0px 0px 10px 10px;
@@ -149,6 +148,7 @@ $bg-2: #f9f7f7;
     }
     .skills-icon {
       margin-left: 0rem;
+      width: 30px;
     }
   }
 }
@@ -159,10 +159,6 @@ $bg-2: #f9f7f7;
       font-size: 2rem;
     }
     padding: 0rem 1rem 4rem 1rem;
-    img,
-    .project-desc {
-      width: 95%;
-      max-width: 95%;
-    }
+    
   }
 }

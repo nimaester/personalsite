@@ -6,9 +6,7 @@
   box-sizing: border-box;
 }
 
-p {
-  font-size: 1rem !important;
-}
+
 
 body {
   overflow-x: hidden;
@@ -49,7 +47,7 @@ body {
 
 @media screen and (max-width: 420px) {
   p {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
   button {
     font-size: 0.9rem !important;
