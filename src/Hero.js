@@ -4,7 +4,6 @@ import {
   slideLeftAnimation,
   fadeAnimation,
   primaryFadeAnimation,
-  thirdFadeAnimation,
 } from "./animations/animation";
 import { useInView } from "react-intersection-observer";
 
@@ -65,6 +64,3 @@ const Hero = forwardRef((props, ref) => {
 });
 
 export default Hero;
-
-// fix line 50 onClick={} ??
-// style={{ color: "#00adb5" }} line 39

@@ -1,8 +1,7 @@
-import React, { Fragment, forwardRef } from "react";
+import React, { forwardRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
-  fadeAnimation,
   primaryFadeAnimation,
   slideRightAnimation,
 } from "./animations/animation";
@@ -61,10 +60,18 @@ const AboutMe = forwardRef((props, ref) => {
         </div>
         <p className='invite'>Let's connect! Can't wait to hear from you.</p>
         <div className='links'>
-          <a href='https://www.facebook.com/nim.tayo.12' target='_blank'>
+          <a
+            href='https://www.facebook.com/nim.tayo.12'
+            target='_blank'
+            rel='noreferrer'
+          >
             <img className='primary-icon' src={fbLogo} alt='' />
           </a>
-          <a href='https://www.linkedin.com/in/nimtayo/' target='_blank'>
+          <a
+            href='https://www.linkedin.com/in/nimtayo/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <img src={linkLogo} alt='' />
           </a>
         </div>

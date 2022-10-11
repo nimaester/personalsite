@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { lineAnimation } from "./animations/animation";
+import { NavLink } from "react-router-dom";
+import { useWindowSize } from "./customHooks/customHooks";
 
 const Nav = ({ refs, showLinks, setShowLinks }) => {
-  const location = useLocation();
-
   const scrollSmoothHandler = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  const windowSize = useWindowSize();
 
   const closeNavLinks = () => {
     setShowLinks(!showLinks);
@@ -18,25 +16,19 @@ const Nav = ({ refs, showLinks, setShowLinks }) => {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
+    if (windowSize.width > 865) {
+      setShowLinks(false);
+    }
     document.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY > 0;
       if (scrollCheck !== scroll) {
         setScroll(scrollCheck);
       }
     });
-  });
-
-  const animates = (loc) => {
-    if (loc === location.pathname) {
-      return "100%";
-    } else {
-      return "";
-    }
-  };
+  }, [setShowLinks, scroll, windowSize]);
 
   return (
     <nav id='nav' className={scroll ? "sticky" : "normal"}>
-      <h3></h3>
       <ul className='nav-bar'>
         <li className='name'>
           <i>Nim Tayo</i>

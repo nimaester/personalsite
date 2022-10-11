@@ -30,7 +30,7 @@ $bg-2: #f9f7f7;
   &:hover {
     background-color: $l-blue;
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   .skill-desc {
@@ -64,13 +64,12 @@ $bg-2: #f9f7f7;
     }
     .skills-container {
       padding: 4rem 0rem 0rem 0rem;
-      // grid-template-columns: repeat(3, 8.5rem)
       display: flex;
       flex-wrap: wrap;
     }
     .skill-desc {
       line-height: 1.2;
-      font-size: 0.9rem !important;
+      font-size: 1.1rem !important;
       padding: 10px;
     }
     .skill-img {
@@ -80,36 +79,37 @@ $bg-2: #f9f7f7;
   }
 
   .tech-skill {
-    padding: 5px;
-    margin: 10px;
-    width: 9rem;
+    width: 11rem;
     h3 {
       padding-top: 1rem;
       font-size: 1rem;
       padding-bottom: 1rem;
     }
   }
+  .skill-desc {
+    font-size: 0.9rem !important;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .skills {
-    padding: 1rem 0em 4rem 0rem;
+    padding: 1rem 1rem 4rem 1rem;
     margin-top: 1rem;
     h2 {
       font-size: 2rem;
     }
     .tech-skill {
-      padding: 1px;
-      width: 8rem;
+      padding: 1rem;
+      margin: 10px;
+      width: 150px;
     }
     .skills-container {
       padding: 4rem 0rem 0rem 0rem;
-      grid-template-columns: repeat(2, 1fr);
+    
     }
     .skill-desc {
-      padding: 10px;
-      line-height: 1.2;
-      font-size: 0.9rem !important;
+  
+      font-size: 1rem !important;
     }
   }
 }

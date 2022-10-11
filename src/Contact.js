@@ -1,13 +1,11 @@
 import React, { forwardRef } from "react";
 import emailjs from "emailjs-com";
 import {
-  fadeAnimation,
   primaryFadeAnimation,
   slideRightAnimation,
 } from "./animations/animation";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ScrollTop from "./animations/scrollTop";
 
 const Contact = forwardRef((props, ref) => {
   const sendEmail = (event) => {

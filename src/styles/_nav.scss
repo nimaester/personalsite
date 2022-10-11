@@ -8,7 +8,7 @@ nav {
   display: flex;
   padding: 2rem 4rem;
   margin-bottom: 2rem;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: fixed !important;
   top: 0;
   left: 0;
@@ -73,10 +73,12 @@ nav {
   background-color: $d-blue;
 }
 
+
+
 @media screen and (max-width: 865px) {
   nav {
     background-color: $d-blue;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     .nav-link {
       display: none;
     }

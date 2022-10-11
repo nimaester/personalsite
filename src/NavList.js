@@ -1,8 +1,10 @@
 import React from "react";
-import { useLocation, NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
+import { useWindowSize } from "./customHooks/customHooks";
 
 const NavList = ({ refs, setShowLinks, showLinks }) => {
+  const size = useWindowSize();
+
   const closeNavLinks = () => {
     setShowLinks(false);
   };
@@ -13,6 +15,7 @@ const NavList = ({ refs, setShowLinks, showLinks }) => {
 
   return (
     <div className={`nav-list ${showLinks ? "active" : ""}`}>
+      {console.log(size)}
       <ul>
         <li onClick={closeNavLinks} className='primary nav-list-link'>
           <NavLink

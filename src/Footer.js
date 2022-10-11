@@ -5,22 +5,38 @@ const Footer = () => {
     <div className='footer'>
       <ul>
         <li className='first'>
-          <a href='https://www.linkedin.com/in/nimtayo/' target='_blank'>
+          <a
+            href='https://www.linkedin.com/in/nimtayo/'
+            rel='noreferrer'
+            target='_blank'
+          >
             <i className='fab fa-linkedin fa-2x'></i>
           </a>
         </li>
         <li>
-          <a href='https://www.facebook.com/nim.tayo.12' target='_blank'>
+          <a
+            href='https://www.facebook.com/nim.tayo.12'
+            rel='noreferrer'
+            target='_blank'
+          >
             <i className='fab fa-facebook-square fa-2x'></i>
           </a>
         </li>
         <li>
-          <a href='https://github.com/nimaester' target='_blank'>
+          <a
+            href='https://github.com/nimaester'
+            rel='noreferrer'
+            target='_blank'
+          >
             <i className='fab fa-github-square fa-2x'></i>
           </a>
         </li>
         <li>
-          <a href='https://twitter.com/nim_tayo' target='_blank'>
+          <a
+            href='https://twitter.com/nim_tayo'
+            rel='noreferrer'
+            target='_blank'
+          >
             <i className='fab fa-twitter-square fa-2x'></i>
           </a>
         </li>

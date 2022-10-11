@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
-import { HashRouter, NavLink, useLocation } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./styles/app.scss";
-import { useInView } from "react-intersection-observer";
 
 import Nav from "./Nav";
 import NavList from "./NavList";
@@ -24,7 +23,6 @@ function App() {
   const contactRef = useRef(null);
 
   const [showLinks, setShowLinks] = useState(false);
-  const [back1, setback1] = useState(null);
 
   return (
     <div className='App'>

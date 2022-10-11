@@ -7,11 +7,11 @@ $bg-2: #f9f7f7;
 .nav-list {
   z-index: 10;
   position: fixed;
-  top: 3rem;
+  top: 5rem;
   right: 0;
   padding-top: 2rem;
   width: 25vw;
-  height: 60vh;
+  height: 550px;
   background-color: $d-blue;
   transition: ease 0.5s;
   transform: translateX(100%);
@@ -19,7 +19,7 @@ $bg-2: #f9f7f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 1rem;
+    padding-left: 2rem;
     height: 100%;
     justify-content: space-evenly;
     margin-top: -1rem;
@@ -52,8 +52,20 @@ $bg-2: #f9f7f7;
   transform: translateX(0%);
 }
 
+
 @media screen and (max-width: 865px) {
   .nav-list {
-    width: 50vw;
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90%;
+    
   }
 }
