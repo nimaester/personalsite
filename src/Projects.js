@@ -97,8 +97,8 @@ const Projects = forwardRef((props, ref) => {
         <div className='project-container'>
           {projectInfo.map((app, i) => (
             <div className={"project"} key={i}>
-              <div className='project-img'>
-                <img src={app.img} alt={app.name} />
+              <div>
+                <img className='project-img' src={app.img} alt={app.name} />
               </div>
 
               <div className='project-desc'>
