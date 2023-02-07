@@ -15,7 +15,6 @@ const NavList = ({ refs, setShowLinks, showLinks }) => {
 
   return (
     <div className={`nav-list ${showLinks ? "active" : ""}`}>
-      {console.log(size)}
       <ul>
         <li onClick={closeNavLinks} className='primary nav-list-link'>
           <NavLink
